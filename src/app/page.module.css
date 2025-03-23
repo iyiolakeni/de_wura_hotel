@@ -4,11 +4,6 @@
 .wrapper {
 	font-family: "Roboto", sans-serif;
 }
-
-body {
-	font-family: "Roboto", sans-serif;
-}
-
 .main_view {
 	background: url("/assets/view.png");
 	background-size: cover;
