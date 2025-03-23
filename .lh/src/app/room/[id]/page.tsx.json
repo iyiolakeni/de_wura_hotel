@@ -1,0 +1,30 @@
+{
+    "sourceFile": "src/app/room/[id]/page.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 3,
+            "patches": [
+                {
+                    "date": 1742641781267,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742642646464,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,14 +3,12 @@\n import { all_rooms } from \"../../model/room\";\r\n \r\n export default function RoomDetail() {\r\n \tconst params = useParams();\r\n-\tconst roomId = Number(params.id);\r\n+\tconst roomId = params.route;\r\n \r\n-\tconst room = all_rooms.find((room) => room.id === roomId);\r\n+\tconst room = all_rooms.find((room) => room.route === roomId);\r\n \r\n-\tconsole.log(\"Room: \", room);\r\n-\r\n \tif (!room) return <div>Room Not found</div>;\r\n \r\n \treturn (\r\n \t\t<div>\r\n"
+                },
+                {
+                    "date": 1742642703778,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n import { all_rooms } from \"../../model/room\";\r\n \r\n export default function RoomDetail() {\r\n \tconst params = useParams();\r\n-\tconst roomId = params.route;\r\n+\tconst roomId = params.id;\r\n \r\n \tconst room = all_rooms.find((room) => room.route === roomId);\r\n \r\n \tif (!room) return <div>Room Not found</div>;\r\n"
+                },
+                {
+                    "date": 1742715771841,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n \"use client\";\r\n import { useParams } from \"next/navigation\";\r\n import { all_rooms } from \"../../model/room\";\r\n+import styles from \"./room_detail.module.css\";\r\n+import Image from \"next/image\";\r\n \r\n export default function RoomDetail() {\r\n \tconst params = useParams();\r\n \tconst roomId = params.id;\r\n@@ -10,9 +12,12 @@\n \r\n \tif (!room) return <div>Room Not found</div>;\r\n \r\n \treturn (\r\n-\t\t<div>\r\n+\t\t<div className={styles.container}>\r\n+\t\t\t<div className={styles.room_header}>\r\n+\t\t\t\t{/* <Image alt={room.name} src={room.image1} width={100} height={100} /> */}\r\n+\t\t\t</div>\r\n \t\t\t<h1>Room Detail</h1>\r\n \t\t\t<h2>{room.name}</h2>\r\n \t\t</div>\r\n \t);\r\n"
+                }
+            ],
+            "date": 1742641781267,
+            "name": "Commit-0",
+            "content": "\"use client\";\r\nimport { useParams } from \"next/navigation\";\r\nimport { all_rooms } from \"../../model/room\";\r\n\r\nexport default function RoomDetail() {\r\n\tconst params = useParams();\r\n\tconst roomId = Number(params.id);\r\n\r\n\tconst room = all_rooms.find((room) => room.id === roomId);\r\n\r\n\tconsole.log(\"Room: \", room);\r\n\r\n\tif (!room) return <div>Room Not found</div>;\r\n\r\n\treturn (\r\n\t\t<div>\r\n\t\t\t<h1>Room Detail</h1>\r\n\t\t\t<h2>{room.name}</h2>\r\n\t\t</div>\r\n\t);\r\n}\r\n"
+        }
+    ]
+}

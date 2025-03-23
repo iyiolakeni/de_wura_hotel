@@ -1,0 +1,82 @@
+{
+    "sourceFile": "src/app/page.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 16,
+            "patches": [
+                {
+                    "date": 1742460454041,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742460976928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,10 @@\n+import { Header } from \"./navigation/nav\";\n import styles from \"./page.module.css\";\n \n export default function Home() {\n-\treturn <div className={styles.page}></div>;\n+\treturn (\n+\t\t<div className={styles.page}>\n+\t\t\t<Header />\n+\t\t</div>\n+\t);\n }\n"
+                },
+                {
+                    "date": 1742461522418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,11 @@\n-import { Header } from \"./navigation/nav\";\n+import { Footer, Header } from \"./navigation/nav\";\n import styles from \"./page.module.css\";\n \n export default function Home() {\n \treturn (\n \t\t<div className={styles.page}>\n \t\t\t<Header />\n+\t\t\t<Footer />\n \t\t</div>\n \t);\n }\n"
+                },
+                {
+                    "date": 1742471927531,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,11 +1,5 @@\n-import { Footer, Header } from \"./navigation/nav\";\n import styles from \"./page.module.css\";\n \n export default function Home() {\n-\treturn (\n-\t\t<div className={styles.page}>\n-\t\t\t<Header />\n-\t\t\t<Footer />\n-\t\t</div>\n-\t);\n+\treturn <div className={styles.page}></div>;\n }\n"
+                },
+                {
+                    "date": 1742481935905,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,9 @@\n import styles from \"./page.module.css\";\n \n export default function Home() {\n-\treturn <div className={styles.page}></div>;\n+\treturn (\n+\t\t<div className={styles.page}>\n+\t\t\t<div className={styles.main_view}></div>\n+\t\t</div>\n+\t);\n }\n"
+                },
+                {
+                    "date": 1742482384604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,17 @@\n \n export default function Home() {\n \treturn (\n \t\t<div className={styles.page}>\n-\t\t\t<div className={styles.main_view}></div>\n+\t\t\t<div className={styles.main_view}>\n+\t\t\t\t<div className=\"view\">\n+\t\t\t\t\t<h2>Experience Luxury Beyond Compare</h2>\n+\t\t\t\t\t<p>\n+\t\t\t\t\t\tDiscover an oasis of tranquility and elegance at our five-star\n+\t\t\t\t\t\tresort, where every moment is crafted to perfection.\n+\t\t\t\t\t</p>\n+\t\t\t\t\t<button>Explore Our Rooms</button>\n+\t\t\t\t</div>\n+\t\t\t</div>\n \t\t</div>\n \t);\n }\n"
+                },
+                {
+                    "date": 1742482426701,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,9 @@\n export default function Home() {\n \treturn (\n \t\t<div className={styles.page}>\n \t\t\t<div className={styles.main_view}>\n-\t\t\t\t<div className=\"view\">\n+\t\t\t\t<div className={styles.content}>\n \t\t\t\t\t<h2>Experience Luxury Beyond Compare</h2>\n \t\t\t\t\t<p>\n \t\t\t\t\t\tDiscover an oasis of tranquility and elegance at our five-star\n \t\t\t\t\t\tresort, where every moment is crafted to perfection.\n"
+                },
+                {
+                    "date": 1742482457128,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,10 @@\n \treturn (\n \t\t<div className={styles.page}>\n \t\t\t<div className={styles.main_view}>\n \t\t\t\t<div className={styles.content}>\n-\t\t\t\t\t<h2>Experience Luxury Beyond Compare</h2>\n+\t\t\t\t\t<h1>Experience Luxury</h1>\n+\t\t\t\t\t<h1>Beyond Compare</h1>\n \t\t\t\t\t<p>\n \t\t\t\t\t\tDiscover an oasis of tranquility and elegance at our five-star\n \t\t\t\t\t\tresort, where every moment is crafted to perfection.\n \t\t\t\t\t</p>\n"
+                },
+                {
+                    "date": 1742483958515,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,51 @@\n+import { FeaturedRoom } from \"./model/room_interface\";\n import styles from \"./page.module.css\";\n \n export default function Home() {\n+\tconst featured_rooms: FeaturedRoom[] = [\n+\t\t{\n+\t\t\tid: 1,\n+\t\t\tname: \"Presidential Suit\",\n+\t\t\tdescription:\n+\t\t\t\t\"Experience luxury with breathtaking ocean views,premium amenities, and sophisticated comfort.\",\n+\t\t\tprice: 40000,\n+\t\t\timage: \"/assets/room1.jpg\",\n+\t\t},\n+\t\t{\n+\t\t\tid: 2,\n+\t\t\tname: \"Executive Room\",\n+\t\t\tdescription:\n+\t\t\t\t\"Experience luxury with breathtaking ocean views,premium amenities, and sophisticated comfort.\",\n+\t\t\tprice: 30000,\n+\t\t\timage: \"/assets/room1.jpg\",\n+\t\t},\n+\t\t{\n+\t\t\tid: 3,\n+\t\t\tname: \"Standard Room\",\n+\t\t\tdescription:\n+\t\t\t\t\"Experience luxury with breathtaking ocean views,premium amenities, and sophisticated comfort.\",\n+\t\t\tprice: 25000,\n+\t\t\timage: \"/assets/room1.jpg\",\n+\t\t},\n+\t\t{\n+\t\t\tid: 4,\n+\t\t\tname: \"Kings Size Room 1\",\n+\t\t\tdescription:\n+\t\t\t\t\"Experience luxury with breathtaking ocean views,premium amenities, and sophisticated comfort.\",\n+\t\t\tprice: 25000,\n+\t\t\timage: \"/assets/room1.jpg\",\n+\t\t},\n+\t\t{\n+\t\t\tid: 5,\n+\t\t\tname: \"Kings Single Room 2\",\n+\t\t\tdescription:\n+\t\t\t\t\"Experience luxury with breathtaking ocean views,premium amenities, and sophisticated comfort.\",\n+\t\t\tprice: 20000,\n+\t\t\timage: \"/assets/room1.jpg\",\n+\t\t},\n+\t];\n+\n \treturn (\n \t\t<div className={styles.page}>\n \t\t\t<div className={styles.main_view}>\n \t\t\t\t<div className={styles.content}>\n@@ -13,7 +57,23 @@\n \t\t\t\t\t</p>\n \t\t\t\t\t<button>Explore Our Rooms</button>\n \t\t\t\t</div>\n \t\t\t</div>\n+\n+\t\t\t<div className={styles.featured_room}>\n+\t\t\t\t<h2>Featured Rooms</h2>\n+\t\t\t\t<div className={styles.room_container}>\n+\t\t\t\t\t{featured_rooms.map((room) => (\n+\t\t\t\t\t\t<div key={room.id} className={styles.room}>\n+\t\t\t\t\t\t\t<img src={room.image} alt={room.name} />\n+\t\t\t\t\t\t\t<div className={styles.room_content}>\n+\t\t\t\t\t\t\t\t<h3>{room.name}</h3>\n+\t\t\t\t\t\t\t\t<p>{room.description}</p>\n+\t\t\t\t\t\t\t\t<p>₦{room.price}</p>\n+\t\t\t\t\t\t\t</div>\n+\t\t\t\t\t\t</div>\n+\t\t\t\t\t))}\n+\t\t\t\t</div>\n+\t\t\t</div>\n \t\t</div>\n \t);\n }\n"
+                },
+                {
+                    "date": 1742484020335,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import { FeaturedRoom } from \"./model/room_interface\";\n import styles from \"./page.module.css\";\n+import Image from \"next/image\";\n \n export default function Home() {\n \tconst featured_rooms: FeaturedRoom[] = [\n \t\t{\n@@ -63,9 +64,9 @@\n \t\t\t\t<h2>Featured Rooms</h2>\n \t\t\t\t<div className={styles.room_container}>\n \t\t\t\t\t{featured_rooms.map((room) => (\n \t\t\t\t\t\t<div key={room.id} className={styles.room}>\n-\t\t\t\t\t\t\t<img src={room.image} alt={room.name} />\n+\t\t\t\t\t\t\t<Image src={room.image} alt={room.name} width={50} height={50} />\n \t\t\t\t\t\t\t<div className={styles.room_content}>\n \t\t\t\t\t\t\t\t<h3>{room.name}</h3>\n \t\t\t\t\t\t\t\t<p>{room.description}</p>\n \t\t\t\t\t\t\t\t<p>₦{room.price}</p>\n"
+                },
+                {
+                    "date": 1742484065929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,41 +9,41 @@\n \t\t\tname: \"Presidential Suit\",\n \t\t\tdescription:\n \t\t\t\t\"Experience luxury with breathtaking ocean views,premium amenities, and sophisticated comfort.\",\n \t\t\tprice: 40000,\n-\t\t\timage: \"/assets/room1.jpg\",\n+\t\t\timage: \"/assets/room1.svg\",\n \t\t},\n \t\t{\n \t\t\tid: 2,\n \t\t\tname: \"Executive Room\",\n \t\t\tdescription:\n \t\t\t\t\"Experience luxury with breathtaking ocean views,premium amenities, and sophisticated comfort.\",\n \t\t\tprice: 30000,\n-\t\t\timage: \"/assets/room1.jpg\",\n+\t\t\timage: \"/assets/room1.svg\",\n \t\t},\n \t\t{\n \t\t\tid: 3,\n \t\t\tname: \"Standard Room\",\n \t\t\tdescription:\n \t\t\t\t\"Experience luxury with breathtaking ocean views,premium amenities, and sophisticated comfort.\",\n \t\t\tprice: 25000,\n-\t\t\timage: \"/assets/room1.jpg\",\n+\t\t\timage: \"/assets/room1.svg\",\n \t\t},\n \t\t{\n \t\t\tid: 4,\n \t\t\tname: \"Kings Size Room 1\",\n \t\t\tdescription:\n \t\t\t\t\"Experience luxury with breathtaking ocean views,premium amenities, and sophisticated comfort.\",\n \t\t\tprice: 25000,\n-\t\t\timage: \"/assets/room1.jpg\",\n+\t\t\timage: \"/assets/room1.svg\",\n \t\t},\n \t\t{\n \t\t\tid: 5,\n \t\t\tname: \"Kings Single Room 2\",\n \t\t\tdescription:\n \t\t\t\t\"Experience luxury with breathtaking ocean views,premium amenities, and sophisticated comfort.\",\n \t\t\tprice: 20000,\n-\t\t\timage: \"/assets/room1.jpg\",\n+\t\t\timage: \"/assets/room1.svg\",\n \t\t},\n \t];\n \n \treturn (\n"
+                },
+                {
+                    "date": 1742484206285,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,7 @@\n import { FeaturedRoom } from \"./model/room_interface\";\n import styles from \"./page.module.css\";\n+import style from \"./featuredroom.module.css\";\n import Image from \"next/image\";\n \n export default function Home() {\n \tconst featured_rooms: FeaturedRoom[] = [\n@@ -59,15 +60,15 @@\n \t\t\t\t\t<button>Explore Our Rooms</button>\n \t\t\t\t</div>\n \t\t\t</div>\n \n-\t\t\t<div className={styles.featured_room}>\n+\t\t\t<div className={style.featured_room}>\n \t\t\t\t<h2>Featured Rooms</h2>\n-\t\t\t\t<div className={styles.room_container}>\n+\t\t\t\t<div className={style.room_container}>\n \t\t\t\t\t{featured_rooms.map((room) => (\n-\t\t\t\t\t\t<div key={room.id} className={styles.room}>\n+\t\t\t\t\t\t<div key={room.id} className={style.room}>\n \t\t\t\t\t\t\t<Image src={room.image} alt={room.name} width={50} height={50} />\n-\t\t\t\t\t\t\t<div className={styles.room_content}>\n+\t\t\t\t\t\t\t<div className={style.room_content}>\n \t\t\t\t\t\t\t\t<h3>{room.name}</h3>\n \t\t\t\t\t\t\t\t<p>{room.description}</p>\n \t\t\t\t\t\t\t\t<p>₦{room.price}</p>\n \t\t\t\t\t\t\t</div>\n"
+                },
+                {
+                    "date": 1742484374100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n \t\t\t\t<h2>Featured Rooms</h2>\n \t\t\t\t<div className={style.room_container}>\n \t\t\t\t\t{featured_rooms.map((room) => (\n \t\t\t\t\t\t<div key={room.id} className={style.room}>\n-\t\t\t\t\t\t\t<Image src={room.image} alt={room.name} width={50} height={50} />\n+\t\t\t\t\t\t\t<Image src={room.image} alt={room.name} />\n \t\t\t\t\t\t\t<div className={style.room_content}>\n \t\t\t\t\t\t\t\t<h3>{room.name}</h3>\n \t\t\t\t\t\t\t\t<p>{room.description}</p>\n \t\t\t\t\t\t\t\t<p>₦{room.price}</p>\n"
+                },
+                {
+                    "date": 1742484389639,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,9 @@\n \t\t\t\t<h2>Featured Rooms</h2>\n \t\t\t\t<div className={style.room_container}>\n \t\t\t\t\t{featured_rooms.map((room) => (\n \t\t\t\t\t\t<div key={room.id} className={style.room}>\n-\t\t\t\t\t\t\t<Image src={room.image} alt={room.name} />\n+\t\t\t\t\t\t\t<Image src={room.image} alt={room.name} width={500} height={50} />\n \t\t\t\t\t\t\t<div className={style.room_content}>\n \t\t\t\t\t\t\t\t<h3>{room.name}</h3>\n \t\t\t\t\t\t\t\t<p>{room.description}</p>\n \t\t\t\t\t\t\t\t<p>₦{room.price}</p>\n"
+                },
+                {
+                    "date": 1742484404600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -65,9 +65,14 @@\n \t\t\t\t<h2>Featured Rooms</h2>\n \t\t\t\t<div className={style.room_container}>\n \t\t\t\t\t{featured_rooms.map((room) => (\n \t\t\t\t\t\t<div key={room.id} className={style.room}>\n-\t\t\t\t\t\t\t<Image src={room.image} alt={room.name} width={500} height={50} />\n+\t\t\t\t\t\t\t<Image\n+\t\t\t\t\t\t\t\tsrc={room.image}\n+\t\t\t\t\t\t\t\talt={room.name}\n+\t\t\t\t\t\t\t\twidth={500}\n+\t\t\t\t\t\t\t\theight={350}\n+\t\t\t\t\t\t\t/>\n \t\t\t\t\t\t\t<div className={style.room_content}>\n \t\t\t\t\t\t\t\t<h3>{room.name}</h3>\n \t\t\t\t\t\t\t\t<p>{room.description}</p>\n \t\t\t\t\t\t\t\t<p>₦{room.price}</p>\n"
+                },
+                {
+                    "date": 1742595724100,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -74,9 +74,12 @@\n \t\t\t\t\t\t\t/>\n \t\t\t\t\t\t\t<div className={style.room_content}>\n \t\t\t\t\t\t\t\t<h3>{room.name}</h3>\n \t\t\t\t\t\t\t\t<p>{room.description}</p>\n-\t\t\t\t\t\t\t\t<p>₦{room.price}</p>\n+\t\t\t\t\t\t\t\t<div className={style.more}>\n+\t\t\t\t\t\t\t\t\t<p>₦{room.price}</p>\n+\t\t\t\t\t\t\t\t\t<button>View Details</button>\n+\t\t\t\t\t\t\t\t</div>\n \t\t\t\t\t\t\t</div>\n \t\t\t\t\t\t</div>\n \t\t\t\t\t))}\n \t\t\t\t</div>\n"
+                },
+                {
+                    "date": 1742595854417,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,9 +75,9 @@\n \t\t\t\t\t\t\t<div className={style.room_content}>\n \t\t\t\t\t\t\t\t<h3>{room.name}</h3>\n \t\t\t\t\t\t\t\t<p>{room.description}</p>\n \t\t\t\t\t\t\t\t<div className={style.more}>\n-\t\t\t\t\t\t\t\t\t<p>₦{room.price}</p>\n+\t\t\t\t\t\t\t\t\t<p>From ₦{room.price}/night</p>\n \t\t\t\t\t\t\t\t\t<button>View Details</button>\n \t\t\t\t\t\t\t\t</div>\n \t\t\t\t\t\t\t</div>\n \t\t\t\t\t\t</div>\n"
+                }
+            ],
+            "date": 1742460454041,
+            "name": "Commit-0",
+            "content": "import styles from \"./page.module.css\";\n\nexport default function Home() {\n\treturn <div className={styles.page}></div>;\n}\n"
+        }
+    ]
+}

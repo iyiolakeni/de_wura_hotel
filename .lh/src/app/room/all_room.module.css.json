@@ -1,0 +1,314 @@
+{
+    "sourceFile": "src/app/room/all_room.module.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 74,
+            "patches": [
+                {
+                    "date": 1742598094842,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742598124830,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,4 @@\n .header {\r\n \tdisplay: grid;\r\n-\tjustify-content: center;\r\n+\tjustify-items: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1742598158060,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,8 @@\n .header {\r\n \tdisplay: grid;\r\n \tjustify-items: center;\r\n }\r\n+\r\n+.header h2 {\r\n+\tfont: bold 36px \"Roboto\", sans-serif;\r\n+}\r\n"
+                },
+                {
+                    "date": 1742598217493,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,4 +5,8 @@\n \r\n .header h2 {\r\n \tfont: bold 36px \"Roboto\", sans-serif;\r\n }\r\n+\r\n+.header p {\r\n+\tfont: medium 18px \"Roboto\", sans-serif;\r\n+}\r\n"
+                },
+                {
+                    "date": 1742598232920,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,5 +8,6 @@\n }\r\n \r\n .header p {\r\n \tfont: medium 18px \"Roboto\", sans-serif;\r\n+\twidth: 50%;\r\n }\r\n"
+                },
+                {
+                    "date": 1742598252691,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,6 +8,6 @@\n }\r\n \r\n .header p {\r\n \tfont: medium 18px \"Roboto\", sans-serif;\r\n-\twidth: 50%;\r\n+\twidth: 40%;\r\n }\r\n"
+                },
+                {
+                    "date": 1742598263307,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,5 +9,6 @@\n \r\n .header p {\r\n \tfont: medium 18px \"Roboto\", sans-serif;\r\n \twidth: 40%;\r\n+\ttext-align: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1742598302914,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n }\r\n \r\n .header p {\r\n \tfont: medium 18px \"Roboto\", sans-serif;\r\n-\twidth: 40%;\r\n+\twidth: 45%;\r\n \ttext-align: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1742598312805,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n }\r\n \r\n .header p {\r\n \tfont: medium 18px \"Roboto\", sans-serif;\r\n-\twidth: 45%;\r\n+\twidth: 40%;\r\n \ttext-align: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1742598325874,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,7 +8,7 @@\n }\r\n \r\n .header p {\r\n \tfont: medium 18px \"Roboto\", sans-serif;\r\n-\twidth: 40%;\r\n+\twidth: 35%;\r\n \ttext-align: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1742598460618,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,8 @@\n .header {\r\n \tdisplay: grid;\r\n \tjustify-items: center;\r\n+\tpadding: 40px 0;\r\n }\r\n \r\n .header h2 {\r\n \tfont: bold 36px \"Roboto\", sans-serif;\r\n"
+                },
+                {
+                    "date": 1742598533326,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,11 @@\n+.room {\r\n+\tbackground-color: #1f2937;\r\n+}\r\n .header {\r\n \tdisplay: grid;\r\n \tjustify-items: center;\r\n-\tpadding: 40px 0;\r\n+\tpadding: 20px 0;\r\n }\r\n \r\n .header h2 {\r\n \tfont: bold 36px \"Roboto\", sans-serif;\r\n"
+                },
+                {
+                    "date": 1742598629501,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .room {\r\n-\tbackground-color: #1f2937;\r\n+\tbackground-color: #9ca3af;\r\n }\r\n .header {\r\n \tdisplay: grid;\r\n \tjustify-items: center;\r\n"
+                },
+                {
+                    "date": 1742598657917,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .room {\r\n-\tbackground-color: #9ca3af;\r\n+\tbackground-color: #e5e7eb;\r\n }\r\n .header {\r\n \tdisplay: grid;\r\n \tjustify-items: center;\r\n"
+                },
+                {
+                    "date": 1742598677337,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .room {\r\n-\tbackground-color: #e5e7eb;\r\n+\tbackground-color: #f9fafb;\r\n }\r\n .header {\r\n \tdisplay: grid;\r\n \tjustify-items: center;\r\n"
+                },
+                {
+                    "date": 1742600102969,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-.room {\r\n+.rooms {\r\n \tbackground-color: #f9fafb;\r\n }\r\n .header {\r\n \tdisplay: grid;\r\n@@ -15,4 +15,62 @@\n \tfont: medium 18px \"Roboto\", sans-serif;\r\n \twidth: 35%;\r\n \ttext-align: center;\r\n }\r\n+.room_container {\r\n+\tdisplay: flex;\r\n+\tflex-wrap: wrap;\r\n+\tgap: 20px;\r\n+\tmargin: 0 20px;\r\n+\tjustify-content: center;\r\n+}\r\n+\r\n+.room {\r\n+\t/* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */\r\n+\tbox-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n+\tborder-radius: 10px;\r\n+\twidth: 22%;\r\n+}\r\n+\r\n+.room img {\r\n+\twidth: 100%;\r\n+\tobject-fit: cover;\r\n+}\r\n+\r\n+.room_content {\r\n+\tdisplay: grid;\r\n+\tgap: 20px;\r\n+\tpadding: 20px;\r\n+}\r\n+\r\n+.room_content h3 {\r\n+\tfont: bold 24px \"Roboto\", sans-serif;\r\n+}\r\n+\r\n+.room_content p {\r\n+\tfont: medium 16px \"Roboto\", sans-serif;\r\n+}\r\n+\r\n+.more {\r\n+\tdisplay: flex;\r\n+\tjustify-content: space-between;\r\n+\talign-items: center;\r\n+}\r\n+\r\n+.more p {\r\n+\tfont: bold 20px \"Roboto\", sans-serif;\r\n+}\r\n+\r\n+.more button {\r\n+\tpadding: 8px 24px;\r\n+\tbackground-color: #000000;\r\n+\tcolor: white;\r\n+\tborder: none;\r\n+\tborder-radius: 5px;\r\n+\tfont: medium 16px \"Roboto\", sans-serif;\r\n+\tcursor: pointer;\r\n+\ttransition: 0.3s ease-in-out;\r\n+}\r\n+\r\n+.more button:hover {\r\n+\tbackground-color: #38528a;\r\n+}\r\n"
+                },
+                {
+                    "date": 1742600273885,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,26 +41,21 @@\n \tgap: 20px;\r\n \tpadding: 20px;\r\n }\r\n \r\n-.room_content h3 {\r\n-\tfont: bold 24px \"Roboto\", sans-serif;\r\n-}\r\n-\r\n-.room_content p {\r\n-\tfont: medium 16px \"Roboto\", sans-serif;\r\n-}\r\n-\r\n-.more {\r\n+.room_content_header {\r\n \tdisplay: flex;\r\n \tjustify-content: space-between;\r\n-\talign-items: center;\r\n }\r\n \r\n-.more p {\r\n+.room_content_head h2 {\r\n \tfont: bold 20px \"Roboto\", sans-serif;\r\n }\r\n \r\n+.room_content_head p {\r\n+\tfont: medium 16px \"Roboto\", sans-serif;\r\n+}\r\n+\r\n .more button {\r\n \tpadding: 8px 24px;\r\n \tbackground-color: #000000;\r\n \tcolor: white;\r\n"
+                },
+                {
+                    "date": 1742600462406,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,8 +54,17 @@\n .room_content_head p {\r\n \tfont: medium 16px \"Roboto\", sans-serif;\r\n }\r\n \r\n+.status {\r\n+\tfont: medium 14px \"Roboto\", sans-serif;\r\n+\tcolor: #166534;\r\n+\tborder-radius: 10px;\r\n+\tbackground: #dcfce7;\r\n+\r\n+\tz-index: 1;\r\n+}\r\n+\r\n .more button {\r\n \tpadding: 8px 24px;\r\n \tbackground-color: #000000;\r\n \tcolor: white;\r\n"
+                },
+                {
+                    "date": 1742600522503,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,11 +58,10 @@\n .status {\r\n \tfont: medium 14px \"Roboto\", sans-serif;\r\n \tcolor: #166534;\r\n \tborder-radius: 10px;\r\n+\tpadding: auto;\r\n \tbackground: #dcfce7;\r\n-\r\n-\tz-index: 1;\r\n }\r\n \r\n .more button {\r\n \tpadding: 8px 24px;\r\n"
+                },
+                {
+                    "date": 1742600529782,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,9 +55,9 @@\n \tfont: medium 16px \"Roboto\", sans-serif;\r\n }\r\n \r\n .status {\r\n-\tfont: medium 14px \"Roboto\", sans-serif;\r\n+\tfont: 400 14px \"Roboto\", sans-serif;\r\n \tcolor: #166534;\r\n \tborder-radius: 10px;\r\n \tpadding: auto;\r\n \tbackground: #dcfce7;\r\n"
+                },
+                {
+                    "date": 1742600539688,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n .status {\r\n \tfont: 400 14px \"Roboto\", sans-serif;\r\n \tcolor: #166534;\r\n \tborder-radius: 10px;\r\n-\tpadding: auto;\r\n+\tpadding: 5px;\r\n \tbackground: #dcfce7;\r\n }\r\n \r\n .more button {\r\n"
+                },
+                {
+                    "date": 1742600545404,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n .status {\r\n \tfont: 400 14px \"Roboto\", sans-serif;\r\n \tcolor: #166534;\r\n \tborder-radius: 10px;\r\n-\tpadding: 5px;\r\n+\tpadding: 5px 10px;\r\n \tbackground: #dcfce7;\r\n }\r\n \r\n .more button {\r\n"
+                },
+                {
+                    "date": 1742600553159,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n .status {\r\n \tfont: 400 14px \"Roboto\", sans-serif;\r\n \tcolor: #166534;\r\n \tborder-radius: 10px;\r\n-\tpadding: 5px 10px;\r\n+\tpadding: 10px 5px;\r\n \tbackground: #dcfce7;\r\n }\r\n \r\n .more button {\r\n"
+                },
+                {
+                    "date": 1742600569069,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n .status {\r\n \tfont: 400 14px \"Roboto\", sans-serif;\r\n \tcolor: #166534;\r\n \tborder-radius: 10px;\r\n-\tpadding: 10px 5px;\r\n+\tpadding: 5px 0;\r\n \tbackground: #dcfce7;\r\n }\r\n \r\n .more button {\r\n"
+                },
+                {
+                    "date": 1742600586076,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n .status {\r\n \tfont: 400 14px \"Roboto\", sans-serif;\r\n \tcolor: #166534;\r\n \tborder-radius: 10px;\r\n-\tpadding: 5px 0;\r\n+\tpadding: 8px 4px;\r\n \tbackground: #dcfce7;\r\n }\r\n \r\n .more button {\r\n"
+                },
+                {
+                    "date": 1742600623872,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,9 +57,9 @@\n \r\n .status {\r\n \tfont: 400 14px \"Roboto\", sans-serif;\r\n \tcolor: #166534;\r\n-\tborder-radius: 10px;\r\n+\t/* border-radius: 10px; */\r\n \tpadding: 8px 4px;\r\n \tbackground: #dcfce7;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1742600633418,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,11 +55,11 @@\n \tfont: medium 16px \"Roboto\", sans-serif;\r\n }\r\n \r\n .status {\r\n-\tfont: 400 14px \"Roboto\", sans-serif;\r\n+\tfont: 400 10px \"Roboto\", sans-serif;\r\n \tcolor: #166534;\r\n-\t/* border-radius: 10px; */\r\n+\tborder-radius: 10px;\r\n \tpadding: 8px 4px;\r\n \tbackground: #dcfce7;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1742600643723,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -55,11 +55,11 @@\n \tfont: medium 16px \"Roboto\", sans-serif;\r\n }\r\n \r\n .status {\r\n-\tfont: 400 10px \"Roboto\", sans-serif;\r\n+\tfont: 400 14px \"Roboto\", sans-serif;\r\n \tcolor: #166534;\r\n-\tborder-radius: 10px;\r\n+\tborder-radius: 20px;\r\n \tpadding: 8px 4px;\r\n \tbackground: #dcfce7;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1742600666468,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,9 @@\n \tcolor: #166534;\r\n \tborder-radius: 20px;\r\n \tpadding: 8px 4px;\r\n \tbackground: #dcfce7;\r\n+\tmargin: 0;\r\n }\r\n \r\n .more button {\r\n \tpadding: 8px 24px;\r\n"
+                },
+                {
+                    "date": 1742600680186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,10 +57,10 @@\n \r\n .status {\r\n \tfont: 400 14px \"Roboto\", sans-serif;\r\n \tcolor: #166534;\r\n-\tborder-radius: 20px;\r\n-\tpadding: 8px 4px;\r\n+\tborder-radius: 10px;\r\n+\tpadding: 4px;\r\n \tbackground: #dcfce7;\r\n \tmargin: 0;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1742600687814,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,9 @@\n .status {\r\n \tfont: 400 14px \"Roboto\", sans-serif;\r\n \tcolor: #166534;\r\n \tborder-radius: 10px;\r\n-\tpadding: 4px;\r\n+\tpadding: 4px 0;\r\n \tbackground: #dcfce7;\r\n \tmargin: 0;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1742600715802,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,9 +54,9 @@\n .room_content_head p {\r\n \tfont: medium 16px \"Roboto\", sans-serif;\r\n }\r\n \r\n-.status {\r\n+.room_content_header p {\r\n \tfont: 400 14px \"Roboto\", sans-serif;\r\n \tcolor: #166534;\r\n \tborder-radius: 10px;\r\n \tpadding: 4px 0;\r\n"
+                },
+                {
+                    "date": 1742600741420,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,15 +54,16 @@\n .room_content_head p {\r\n \tfont: medium 16px \"Roboto\", sans-serif;\r\n }\r\n \r\n-.room_content_header p {\r\n+.status {\r\n \tfont: 400 14px \"Roboto\", sans-serif;\r\n \tcolor: #166534;\r\n \tborder-radius: 10px;\r\n \tpadding: 4px 0;\r\n \tbackground: #dcfce7;\r\n \tmargin: 0;\r\n+\theight: auto;\r\n }\r\n \r\n .more button {\r\n \tpadding: 8px 24px;\r\n"
+                },
+                {
+                    "date": 1742600789706,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,12 +58,12 @@\n .status {\r\n \tfont: 400 14px \"Roboto\", sans-serif;\r\n \tcolor: #166534;\r\n \tborder-radius: 10px;\r\n-\tpadding: 4px 0;\r\n+\tpadding: 4px;\r\n \tbackground: #dcfce7;\r\n \tmargin: 0;\r\n-\theight: auto;\r\n+\theight: 25px;\r\n }\r\n \r\n .more button {\r\n \tpadding: 8px 24px;\r\n"
+                },
+                {
+                    "date": 1742600942253,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,14 +58,29 @@\n .status {\r\n \tfont: 400 14px \"Roboto\", sans-serif;\r\n \tcolor: #166534;\r\n \tborder-radius: 10px;\r\n-\tpadding: 4px;\r\n+\tpadding: 5px;\r\n \tbackground: #dcfce7;\r\n \tmargin: 0;\r\n \theight: 25px;\r\n }\r\n \r\n+.details {\r\n+\tdisplay: flex;\r\n+\tgap: 10px;\r\n+}\r\n+\r\n+.detail {\r\n+\tdisplay: flex;\r\n+\talign-items: center;\r\n+}\r\n+\r\n+.detail img {\r\n+\twidth: 20px;\r\n+\theight: 20px;\r\n+}\r\n+\r\n .more button {\r\n \tpadding: 8px 24px;\r\n \tbackground-color: #000000;\r\n \tcolor: white;\r\n"
+                },
+                {
+                    "date": 1742600963862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -75,10 +75,10 @@\n \talign-items: center;\r\n }\r\n \r\n .detail img {\r\n-\twidth: 20px;\r\n-\theight: 20px;\r\n+\twidth: 15px;\r\n+\theight: 15px;\r\n }\r\n \r\n .more button {\r\n \tpadding: 8px 24px;\r\n"
+                },
+                {
+                    "date": 1742600977388,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,8 +71,9 @@\n }\r\n \r\n .detail {\r\n \tdisplay: flex;\r\n+\tgap: 5px;\r\n \talign-items: center;\r\n }\r\n \r\n .detail img {\r\n"
+                },
+                {
+                    "date": 1742601036563,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,14 +64,14 @@\n \tmargin: 0;\r\n \theight: 25px;\r\n }\r\n \r\n-.details {\r\n+.details .extra {\r\n \tdisplay: flex;\r\n \tgap: 10px;\r\n }\r\n \r\n-.detail {\r\n+.detail .extra_details {\r\n \tdisplay: flex;\r\n \tgap: 5px;\r\n \talign-items: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1742601050105,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -64,14 +64,16 @@\n \tmargin: 0;\r\n \theight: 25px;\r\n }\r\n \r\n-.details .extra {\r\n+.details,\r\n+.extra {\r\n \tdisplay: flex;\r\n \tgap: 10px;\r\n }\r\n \r\n-.detail .extra_details {\r\n+.detail,\r\n+.extra_details {\r\n \tdisplay: flex;\r\n \tgap: 5px;\r\n \talign-items: center;\r\n }\r\n"
+                },
+                {
+                    "date": 1742601070142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,9 +77,10 @@\n \tgap: 5px;\r\n \talign-items: center;\r\n }\r\n \r\n-.detail img {\r\n+.detail img,\r\n+.extra_details img {\r\n \twidth: 15px;\r\n \theight: 15px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1742601172976,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -83,8 +83,12 @@\n \twidth: 15px;\r\n \theight: 15px;\r\n }\r\n \r\n+.extra_details {\r\n+\tbackground-color: #dfdfdf;\r\n+}\r\n+\r\n .more button {\r\n \tpadding: 8px 24px;\r\n \tbackground-color: #000000;\r\n \tcolor: white;\r\n"
+                },
+                {
+                    "date": 1742601200466,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,8 +85,10 @@\n }\r\n \r\n .extra_details {\r\n \tbackground-color: #dfdfdf;\r\n+\tpadding: 4px 8px;\r\n+\tborder-radius: 10px;\r\n }\r\n \r\n .more button {\r\n \tpadding: 8px 24px;\r\n"
+                },
+                {
+                    "date": 1742601216346,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,9 +85,9 @@\n }\r\n \r\n .extra_details {\r\n \tbackground-color: #dfdfdf;\r\n-\tpadding: 4px 8px;\r\n+\tpadding: 4px;\r\n \tborder-radius: 10px;\r\n }\r\n \r\n .more button {\r\n"
+                },
+                {
+                    "date": 1742601261302,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -85,13 +85,13 @@\n }\r\n \r\n .extra_details {\r\n \tbackground-color: #dfdfdf;\r\n-\tpadding: 4px;\r\n+\tpadding: 5px;\r\n \tborder-radius: 10px;\r\n }\r\n \r\n-.more button {\r\n+.room_content button {\r\n \tpadding: 8px 24px;\r\n \tbackground-color: #000000;\r\n \tcolor: white;\r\n \tborder: none;\r\n@@ -100,7 +100,7 @@\n \tcursor: pointer;\r\n \ttransition: 0.3s ease-in-out;\r\n }\r\n \r\n-.more button:hover {\r\n+.room_content button:hover {\r\n \tbackground-color: #38528a;\r\n }\r\n"
+                },
+                {
+                    "date": 1742601282013,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,8 +32,9 @@\n }\r\n \r\n .room img {\r\n \twidth: 100%;\r\n+\theight: 50%;\r\n \tobject-fit: cover;\r\n }\r\n \r\n .room_content {\r\n"
+                },
+                {
+                    "date": 1742601289164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n }\r\n \r\n .room img {\r\n \twidth: 100%;\r\n-\theight: 50%;\r\n+\theight: 40%;\r\n \tobject-fit: cover;\r\n }\r\n \r\n .room_content {\r\n"
+                },
+                {
+                    "date": 1742601306173,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -32,9 +32,9 @@\n }\r\n \r\n .room img {\r\n \twidth: 100%;\r\n-\theight: 40%;\r\n+\theight: 350px;\r\n \tobject-fit: cover;\r\n }\r\n \r\n .room_content {\r\n"
+                },
+                {
+                    "date": 1742601370235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,8 +71,12 @@\n \tdisplay: flex;\r\n \tgap: 10px;\r\n }\r\n \r\n+.detail {\r\n+\tborder-bottom: 1px solid #dfdfdf;\r\n+}\r\n+\r\n .detail,\r\n .extra_details {\r\n \tdisplay: flex;\r\n \tgap: 5px;\r\n"
+                },
+                {
+                    "date": 1742601405379,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,10 +71,10 @@\n \tdisplay: flex;\r\n \tgap: 10px;\r\n }\r\n \r\n-.detail {\r\n-\tborder-bottom: 1px solid #dfdfdf;\r\n+hr {\r\n+\tcolor: #dfdfdf;\r\n }\r\n \r\n .detail,\r\n .extra_details {\r\n"
+                },
+                {
+                    "date": 1742601418581,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,9 +71,9 @@\n \tdisplay: flex;\r\n \tgap: 10px;\r\n }\r\n \r\n-hr {\r\n+.room_content hr {\r\n \tcolor: #dfdfdf;\r\n }\r\n \r\n .detail,\r\n"
+                },
+                {
+                    "date": 1742602356893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -71,12 +71,8 @@\n \tdisplay: flex;\r\n \tgap: 10px;\r\n }\r\n \r\n-.room_content hr {\r\n-\tcolor: #dfdfdf;\r\n-}\r\n-\r\n .detail,\r\n .extra_details {\r\n \tdisplay: flex;\r\n \tgap: 5px;\r\n@@ -95,9 +91,9 @@\n \tborder-radius: 10px;\r\n }\r\n \r\n .room_content button {\r\n-\tpadding: 8px 24px;\r\n+\tpadding: 12px 32px;\r\n \tbackground-color: #000000;\r\n \tcolor: white;\r\n \tborder: none;\r\n \tborder-radius: 5px;\r\n"
+                },
+                {
+                    "date": 1742603426247,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n .room {\r\n \t/* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */\r\n \tbox-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n \tborder-radius: 10px;\r\n-\twidth: 22%;\r\n+\twidth: 30%;\r\n }\r\n \r\n .room img {\r\n \twidth: 100%;\r\n"
+                },
+                {
+                    "date": 1742603695945,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,4 +104,9 @@\n \r\n .room_content button:hover {\r\n \tbackground-color: #38528a;\r\n }\r\n+\r\n+.compare {\r\n+\tmargin: 20px;\r\n+\tpadding: 20px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1742603715324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,4 +109,8 @@\n .compare {\r\n \tmargin: 20px;\r\n \tpadding: 20px;\r\n }\r\n+\r\n+.compare table {\r\n+\tpadding: 20px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1742603743721,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -112,5 +112,9 @@\n }\r\n \r\n .compare table {\r\n \tpadding: 20px;\r\n+\twidth: 100%;\r\n }\r\n+\r\n+.compare thead {\r\n+}\r\n"
+                },
+                {
+                    "date": 1742603756540,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -116,5 +116,6 @@\n \twidth: 100%;\r\n }\r\n \r\n .compare thead {\r\n+\tpadding: 20px;\r\n }\r\n"
+                },
+                {
+                    "date": 1742603764042,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -115,7 +115,8 @@\n \tpadding: 20px;\r\n \twidth: 100%;\r\n }\r\n \r\n-.compare thead {\r\n+.compare thead,\r\n+.compare td {\r\n \tpadding: 20px;\r\n }\r\n"
+                },
+                {
+                    "date": 1742603788519,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,5 +118,6 @@\n \r\n .compare thead,\r\n .compare td {\r\n \tpadding: 20px;\r\n+\tborder-bottom: 1px solid #dcfce7;\r\n }\r\n"
+                },
+                {
+                    "date": 1742603821386,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,6 +118,6 @@\n \r\n .compare thead,\r\n .compare td {\r\n \tpadding: 20px;\r\n-\tborder-bottom: 1px solid #dcfce7;\r\n+\tborder-bottom: 1px solid #2ce16b;\r\n }\r\n"
+                },
+                {
+                    "date": 1742603830663,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,6 +118,6 @@\n \r\n .compare thead,\r\n .compare td {\r\n \tpadding: 20px;\r\n-\tborder-bottom: 1px solid #2ce16b;\r\n+\tborder-bottom: 1px solid #c8c8c8;\r\n }\r\n"
+                },
+                {
+                    "date": 1742603850718,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,6 +118,9 @@\n \r\n .compare thead,\r\n .compare td {\r\n \tpadding: 20px;\r\n+}\r\n+\r\n+.compare tr {\r\n \tborder-bottom: 1px solid #c8c8c8;\r\n }\r\n"
+                },
+                {
+                    "date": 1742603879081,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -120,7 +120,7 @@\n .compare td {\r\n \tpadding: 20px;\r\n }\r\n \r\n-.compare tr {\r\n+.compare tbody {\r\n \tborder-bottom: 1px solid #c8c8c8;\r\n }\r\n"
+                },
+                {
+                    "date": 1742603889997,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -118,9 +118,9 @@\n \r\n .compare thead,\r\n .compare td {\r\n \tpadding: 20px;\r\n+\tborder-bottom: 1px solid #c8c8c8;\r\n }\r\n \r\n-.compare tbody {\r\n-\tborder-bottom: 1px solid #c8c8c8;\r\n+.compare tr {\r\n }\r\n"
+                },
+                {
+                    "date": 1742603932491,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,14 +113,14 @@\n \r\n .compare table {\r\n \tpadding: 20px;\r\n \twidth: 100%;\r\n+\tborder-bottom: 1px solid #c8c8c8;\r\n }\r\n \r\n .compare thead,\r\n .compare td {\r\n \tpadding: 20px;\r\n-\tborder-bottom: 1px solid #c8c8c8;\r\n }\r\n \r\n .compare tr {\r\n }\r\n"
+                },
+                {
+                    "date": 1742603951389,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -113,14 +113,14 @@\n \r\n .compare table {\r\n \tpadding: 20px;\r\n \twidth: 100%;\r\n-\tborder-bottom: 1px solid #c8c8c8;\r\n }\r\n \r\n .compare thead,\r\n .compare td {\r\n \tpadding: 20px;\r\n }\r\n \r\n .compare tr {\r\n+\tborder-bottom: 1px solid #c8c8c8;\r\n }\r\n"
+                },
+                {
+                    "date": 1742604005416,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,16 +111,17 @@\n \tpadding: 20px;\r\n }\r\n \r\n .compare table {\r\n-\tpadding: 20px;\r\n+\t/* padding: 20px; */\r\n \twidth: 100%;\r\n+\tborder-spacing: 0;\r\n }\r\n \r\n .compare thead,\r\n .compare td {\r\n \tpadding: 20px;\r\n+\tborder-bottom: 1px solid #c8c8c8;\r\n }\r\n \r\n .compare tr {\r\n-\tborder-bottom: 1px solid #c8c8c8;\r\n }\r\n"
+                },
+                {
+                    "date": 1742604015324,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -111,9 +111,8 @@\n \tpadding: 20px;\r\n }\r\n \r\n .compare table {\r\n-\t/* padding: 20px; */\r\n \twidth: 100%;\r\n \tborder-spacing: 0;\r\n }\r\n \r\n@@ -121,7 +120,4 @@\n .compare td {\r\n \tpadding: 20px;\r\n \tborder-bottom: 1px solid #c8c8c8;\r\n }\r\n-\r\n-.compare tr {\r\n-}\r\n"
+                },
+                {
+                    "date": 1742604073693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -108,8 +108,11 @@\n \r\n .compare {\r\n \tmargin: 20px;\r\n \tpadding: 20px;\r\n+\tbackground-color: white;\r\n+\tbox-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,\r\n+\t\trgba(0, 0, 0, 0.3) 0px 3px 7px -3px;\r\n }\r\n \r\n .compare table {\r\n \twidth: 100%;\r\n"
+                },
+                {
+                    "date": 1742604083881,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -109,8 +109,9 @@\n .compare {\r\n \tmargin: 20px;\r\n \tpadding: 20px;\r\n \tbackground-color: white;\r\n+\tborder-radius: 10px;\r\n \tbox-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,\r\n \t\trgba(0, 0, 0, 0.3) 0px 3px 7px -3px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1742604121019,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,8 @@\n .rooms {\r\n \tbackground-color: #f9fafb;\r\n+\tdisplay: grid;\r\n+\tgap: 40px;\r\n }\r\n .header {\r\n \tdisplay: grid;\r\n \tjustify-items: center;\r\n"
+                },
+                {
+                    "date": 1742604134794,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n .rooms {\r\n \tbackground-color: #f9fafb;\r\n \tdisplay: grid;\r\n-\tgap: 40px;\r\n+\tgap: 60px;\r\n }\r\n .header {\r\n \tdisplay: grid;\r\n \tjustify-items: center;\r\n"
+                },
+                {
+                    "date": 1742604170568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -26,10 +26,10 @@\n \tjustify-content: center;\r\n }\r\n \r\n .room {\r\n-\t/* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */\r\n-\tbox-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n+\tbox-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,\r\n+\t\trgba(0, 0, 0, 0.3) 0px 3px 7px -3px;\r\n \tborder-radius: 10px;\r\n \twidth: 30%;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1742604197898,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,8 +34,9 @@\n }\r\n \r\n .room img {\r\n \twidth: 100%;\r\n+\tborder-radius-top-left: 10px;\r\n \theight: 350px;\r\n \tobject-fit: cover;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1742604217318,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -34,9 +34,10 @@\n }\r\n \r\n .room img {\r\n \twidth: 100%;\r\n-\tborder-radius-top-left: 10px;\r\n+\tborder-top-left-radius: 10px;\r\n+\tborder-top-right-radius: 10px;\r\n \theight: 350px;\r\n \tobject-fit: cover;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1742604274555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -30,8 +30,9 @@\n \tbox-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,\r\n \t\trgba(0, 0, 0, 0.3) 0px 3px 7px -3px;\r\n \tborder-radius: 10px;\r\n \twidth: 30%;\r\n+\tmargin-bottom: 20px;\r\n }\r\n \r\n .room img {\r\n \twidth: 100%;\r\n"
+                }
+            ],
+            "date": 1742598094842,
+            "name": "Commit-0",
+            "content": ".header {\r\n\tdisplay: grid;\r\n\tjustify-content: center;\r\n}\r\n"
+        }
+    ]
+}

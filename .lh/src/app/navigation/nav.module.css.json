@@ -1,0 +1,122 @@
+{
+    "sourceFile": "src/app/navigation/nav.module.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 26,
+            "patches": [
+                {
+                    "date": 1742460875015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742461520032,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,10 +1,16 @@\n .footer {\r\n+\tpadding: 20px;\r\n+\tbackground-color: #111827;\r\n+}\r\n+\r\n+.footer_container {\r\n \tdisplay: flex;\r\n \talign-items: center;\r\n \tjustify-content: space-between;\r\n \tpadding: 20px;\r\n \tbackground-color: white;\r\n+\tborder-bottom: 1px solid #e5e7eb;\r\n }\r\n \r\n .icon {\r\n \tdisplay: flex;\r\n"
+                },
+                {
+                    "date": 1742461835156,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \tdisplay: flex;\r\n \talign-items: center;\r\n \tjustify-content: space-between;\r\n \tpadding: 20px;\r\n-\tbackground-color: white;\r\n+\tcolor: white;\r\n \tborder-bottom: 1px solid #e5e7eb;\r\n }\r\n \r\n .icon {\r\n"
+                },
+                {
+                    "date": 1742461843243,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,9 +8,9 @@\n \talign-items: center;\r\n \tjustify-content: space-between;\r\n \tpadding: 20px;\r\n \tcolor: white;\r\n-\tborder-bottom: 1px solid #e5e7eb;\r\n+\tborder-bottom: 1px solid #767b85;\r\n }\r\n \r\n .icon {\r\n \tdisplay: flex;\r\n"
+                },
+                {
+                    "date": 1742466185186,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -40,4 +40,10 @@\n .active {\r\n \tcolor: #2563eb;\r\n \tfont: 700 16px \"Roboto\", sans-serif;\r\n }\r\n+\r\n+.row {\r\n+\tdisplay: flex;\r\n+\talign-items: center;\r\n+\tgap: 20px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1742466221474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,4 +46,8 @@\n \tdisplay: flex;\r\n \talign-items: center;\r\n \tgap: 20px;\r\n }\r\n+\r\n+.content-1 {\r\n+\tpadding: 20px;\r\n+}\r\n"
+                },
+                {
+                    "date": 1742466233242,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,5 +49,6 @@\n }\r\n \r\n .content-1 {\r\n \tpadding: 20px;\r\n+\tmargin: 20px;\r\n }\r\n"
+                },
+                {
+                    "date": 1742466251260,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,10 +45,10 @@\n .row {\r\n \tdisplay: flex;\r\n \talign-items: center;\r\n \tgap: 20px;\r\n+\tmargin-bottom: 20px;\r\n }\r\n \r\n .content-1 {\r\n \tpadding: 20px;\r\n-\tmargin: 20px;\r\n }\r\n"
+                },
+                {
+                    "date": 1742466259818,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -45,9 +45,9 @@\n .row {\r\n \tdisplay: flex;\r\n \talign-items: center;\r\n \tgap: 20px;\r\n-\tmargin-bottom: 20px;\r\n+\tmargin: 20px 0;\r\n }\r\n \r\n .content-1 {\r\n \tpadding: 20px;\r\n"
+                },
+                {
+                    "date": 1742466281981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,6 +49,6 @@\n \tmargin: 20px 0;\r\n }\r\n \r\n .content-1 {\r\n-\tpadding: 20px;\r\n+\tmargin: 20px;\r\n }\r\n"
+                },
+                {
+                    "date": 1742466350206,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,14 +41,14 @@\n \tcolor: #2563eb;\r\n \tfont: 700 16px \"Roboto\", sans-serif;\r\n }\r\n \r\n-.row {\r\n+.row ul {\r\n \tdisplay: flex;\r\n \talign-items: center;\r\n \tgap: 20px;\r\n \tmargin: 20px 0;\r\n }\r\n \r\n .content-1 {\r\n-\tmargin: 20px;\r\n+\tpadding: 20px;\r\n }\r\n"
+                },
+                {
+                    "date": 1742466362465,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -41,9 +41,9 @@\n \tcolor: #2563eb;\r\n \tfont: 700 16px \"Roboto\", sans-serif;\r\n }\r\n \r\n-.row ul {\r\n+.row {\r\n \tdisplay: flex;\r\n \talign-items: center;\r\n \tgap: 20px;\r\n \tmargin: 20px 0;\r\n@@ -51,4 +51,8 @@\n \r\n .content-1 {\r\n \tpadding: 20px;\r\n }\r\n+\r\n+ul {\r\n+\tlist-style-type: none;\r\n+}\r\n"
+                },
+                {
+                    "date": 1742466379037,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,7 +52,7 @@\n .content-1 {\r\n \tpadding: 20px;\r\n }\r\n \r\n-ul {\r\n+.ul {\r\n \tlist-style-type: none;\r\n }\r\n"
+                },
+                {
+                    "date": 1742466410740,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,7 +52,7 @@\n .content-1 {\r\n \tpadding: 20px;\r\n }\r\n \r\n-.ul {\r\n+.content-1 ul {\r\n \tlist-style-type: none;\r\n }\r\n"
+                },
+                {
+                    "date": 1742466468800,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,7 +52,7 @@\n .content-1 {\r\n \tpadding: 20px;\r\n }\r\n \r\n-.content-1 ul {\r\n+.content-1 > ul {\r\n \tlist-style-type: none;\r\n }\r\n"
+                },
+                {
+                    "date": 1742466500223,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,9 +4,9 @@\n }\r\n \r\n .footer_container {\r\n \tdisplay: flex;\r\n-\talign-items: center;\r\n+\talign-items: top;\r\n \tjustify-content: space-between;\r\n \tpadding: 20px;\r\n \tcolor: white;\r\n \tborder-bottom: 1px solid #767b85;\r\n"
+                },
+                {
+                    "date": 1742466513431,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,7 +52,7 @@\n .content-1 {\r\n \tpadding: 20px;\r\n }\r\n \r\n-.content-1 > ul {\r\n+/* .content-1 > ul {\r\n \tlist-style-type: none;\r\n-}\r\n+} */\r\n"
+                },
+                {
+                    "date": 1742466518834,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,7 +52,7 @@\n .content-1 {\r\n \tpadding: 20px;\r\n }\r\n \r\n-/* .content-1 > ul {\r\n+.content-1 > ul {\r\n \tlist-style-type: none;\r\n-} */\r\n+}\r\n"
+                },
+                {
+                    "date": 1742466540819,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,7 +52,7 @@\n .content-1 {\r\n \tpadding: 20px;\r\n }\r\n \r\n-.content-1 > ul {\r\n+ul {\r\n \tlist-style-type: none;\r\n }\r\n"
+                },
+                {
+                    "date": 1742466577167,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,7 +52,7 @@\n .content-1 {\r\n \tpadding: 20px;\r\n }\r\n \r\n-ul {\r\n+ul.list {\r\n \tlist-style-type: none;\r\n }\r\n"
+                },
+                {
+                    "date": 1742466684576,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -54,5 +54,6 @@\n }\r\n \r\n ul.list {\r\n \tlist-style-type: none;\r\n+\tmargin: 20px 0;\r\n }\r\n"
+                },
+                {
+                    "date": 1742466731657,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n .footer_container {\r\n \tdisplay: flex;\r\n \talign-items: top;\r\n-\tjustify-content: space-between;\r\n+\tjustify-content: space-evenly;\r\n \tpadding: 20px;\r\n \tcolor: white;\r\n \tborder-bottom: 1px solid #767b85;\r\n }\r\n"
+                },
+                {
+                    "date": 1742466751061,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n .footer_container {\r\n \tdisplay: flex;\r\n \talign-items: top;\r\n-\tjustify-content: space-evenly;\r\n+\tjustify-content: space-around;\r\n \tpadding: 20px;\r\n \tcolor: white;\r\n \tborder-bottom: 1px solid #767b85;\r\n }\r\n"
+                },
+                {
+                    "date": 1742466825047,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \r\n .footer_container {\r\n \tdisplay: flex;\r\n \talign-items: top;\r\n-\tjustify-content: space-around;\r\n+\tjustify-content: space-evenly;\r\n \tpadding: 20px;\r\n \tcolor: white;\r\n \tborder-bottom: 1px solid #767b85;\r\n }\r\n@@ -48,9 +48,9 @@\n \tgap: 20px;\r\n \tmargin: 20px 0;\r\n }\r\n \r\n-.content-1 {\r\n+.content_1 {\r\n \tpadding: 20px;\r\n }\r\n \r\n ul.list {\r\n"
+                },
+                {
+                    "date": 1742466922673,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,8 +50,9 @@\n }\r\n \r\n .content_1 {\r\n \tpadding: 20px;\r\n+\twidth: 25%;\r\n }\r\n \r\n ul.list {\r\n \tlist-style-type: none;\r\n"
+                },
+                {
+                    "date": 1742638817746,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,8 +36,12 @@\n \tfont: 500 16px \"Roboto\", sans-serif;\r\n \tcolor: #111827;\r\n }\r\n \r\n+.link :hover {\r\n+\tcolor: #2563eb;\r\n+}\r\n+\r\n .active {\r\n \tcolor: #2563eb;\r\n \tfont: 700 16px \"Roboto\", sans-serif;\r\n }\r\n"
+                },
+                {
+                    "date": 1742638974218,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n \tfont: 500 16px \"Roboto\", sans-serif;\r\n \tcolor: #111827;\r\n }\r\n \r\n-.link :hover {\r\n+.link:hover {\r\n \tcolor: #2563eb;\r\n }\r\n \r\n .active {\r\n"
+                }
+            ],
+            "date": 1742460875015,
+            "name": "Commit-0",
+            "content": ".footer {\r\n\tdisplay: flex;\r\n\talign-items: center;\r\n\tjustify-content: space-between;\r\n\tpadding: 20px;\r\n\tbackground-color: white;\r\n}\r\n\r\n.icon {\r\n\tdisplay: flex;\r\n\talign-items: center;\r\n\tgap: 10px;\r\n}\r\n\r\n.header {\r\n\tdisplay: flex;\r\n\talign-items: center;\r\n\tjustify-content: space-between;\r\n\tpadding: 20px;\r\n\t/* background: linear-gradient(to right, rgb(255, 251, 251), #6b7280, 0.1); */\r\n}\r\n\r\n.nav {\r\n\tdisplay: flex;\r\n\talign-items: center;\r\n\tgap: 20px;\r\n}\r\n\r\n.link {\r\n\tfont: 500 16px \"Roboto\", sans-serif;\r\n\tcolor: #111827;\r\n}\r\n\r\n.active {\r\n\tcolor: #2563eb;\r\n\tfont: 700 16px \"Roboto\", sans-serif;\r\n}\r\n"
+        }
+    ]
+}

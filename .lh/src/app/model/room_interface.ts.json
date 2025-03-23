@@ -1,0 +1,42 @@
+{
+    "sourceFile": "src/app/model/room_interface.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 6,
+            "patches": [
+                {
+                    "date": 1742483533689,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742597605142,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,4 +4,23 @@\n \tdescription: string;\r\n \tprice: number;\r\n \timage: string;\r\n }\r\n+\r\n+export interface RoomType {\r\n+\tid: number;\r\n+\tname: string;\r\n+\tprice: number;\r\n+\timage: string;\r\n+\tstatus: string;\r\n+\tlength: number;\r\n+\tno_of_guests: number;\r\n+\tbed: string;\r\n+\textra1?: string;\r\n+\textra1Image?: string;\r\n+\textra2?: string;\r\n+\textra2Image?: string;\r\n+\textra3?: string;\r\n+\textra3Image?: string;\r\n+\textra4?: string;\r\n+\textra4Image?: string;\r\n+}\r\n"
+                },
+                {
+                    "date": 1742602515866,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,4 +23,12 @@\n \textra3Image?: string;\r\n \textra4?: string;\r\n \textra4Image?: string;\r\n }\r\n+\r\n+export interface RoomComparison {\r\n+\tname: string;\r\n+\troom_size: string;\r\n+\tbed_type: string;\r\n+\tview: string;\r\n+\tprice: number;\r\n+}\r\n"
+                },
+                {
+                    "date": 1742603659139,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -25,10 +25,10 @@\n \textra4Image?: string;\r\n }\r\n \r\n export interface RoomComparison {\r\n+\tid: number;\r\n \tname: string;\r\n-\troom_size: string;\r\n+\troom_size: number;\r\n \tbed_type: string;\r\n-\tview: string;\r\n \tprice: number;\r\n }\r\n"
+                },
+                {
+                    "date": 1742640861359,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -31,4 +31,24 @@\n \troom_size: number;\r\n \tbed_type: string;\r\n \tprice: number;\r\n }\r\n+\r\n+export interface RoomPage {\r\n+\tid: number;\r\n+\tname: string;\r\n+\troute: string;\r\n+\tdescription: string;\r\n+\tprice: number;\r\n+\timage1: string;\r\n+\timage2: string;\r\n+\timage3: string;\r\n+\timage4: string;\r\n+\timage5: string;\r\n+\timage6?: string;\r\n+\timage7?: string;\r\n+\timage8?: string;\r\n+\timage9?: string;\r\n+\timage10?: string;\r\n+\tbed_size: string;\r\n+\tno_of_guests: number;\r\n+}\r\n"
+                },
+                {
+                    "date": 1742642646448,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,8 +8,9 @@\n \r\n export interface RoomType {\r\n \tid: number;\r\n \tname: string;\r\n+\troute: string;\r\n \tprice: number;\r\n \timage: string;\r\n \tstatus: string;\r\n \tlength: number;\r\n"
+                },
+                {
+                    "date": 1742715771851,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,4 +52,9 @@\n \timage10?: string;\r\n \tbed_size: string;\r\n \tno_of_guests: number;\r\n }\r\n+\r\n+export interface RoomImage {\r\n+\tsrc: string;\r\n+\talt: string;\r\n+}\r\n"
+                }
+            ],
+            "date": 1742483533689,
+            "name": "Commit-0",
+            "content": "export interface FeaturedRoom {\r\n\tid: number;\r\n\tname: string;\r\n\tdescription: string;\r\n\tprice: number;\r\n\timage: string;\r\n}\r\n"
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/app/model/room.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1742641346693,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742641598730,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,7 @@\n import { RoomPage } from \"./room_interface\";\r\n \r\n-export const room_comparison: RoomPage[] = [\r\n+export const all_rooms: RoomPage[] = [\r\n \t{\r\n \t\tid: 1,\r\n \t\tname: \"Presidential Suit\",\r\n \t\troute: \"presidential-suit\",\r\n"
+                }
+            ],
+            "date": 1742641346693,
+            "name": "Commit-0",
+            "content": "import { RoomPage } from \"./room_interface\";\r\n\r\nexport const room_comparison: RoomPage[] = [\r\n\t{\r\n\t\tid: 1,\r\n\t\tname: \"Presidential Suit\",\r\n\t\troute: \"presidential-suit\",\r\n\t\tdescription:\r\n\t\t\t\"The Presidential Suite is the most luxurious room in the hotel. It is a two-bedroom suite with a separate living room, dining room, kitchen, and a private balcony. The suite is perfect for families or guests who want to experience the ultimate luxury.\",\r\n\t\tprice: 40000,\r\n\t\tbed_size: \"King Size\",\r\n\t\tno_of_guests: 4,\r\n\t\timage1: \"/assets/room1.svg\",\r\n\t\timage2: \"/assets/room1.svg\",\r\n\t\timage3: \"/assets/room1.svg\",\r\n\t\timage4: \"/assets/room1.svg\",\r\n\t\timage5: \"/assets/room1.svg\",\r\n\t},\r\n\t{\r\n\t\tid: 2,\r\n\t\tname: \"Executive Room\",\r\n\t\troute: \"executive-room\",\r\n\t\tdescription:\r\n\t\t\t\"The Executive Room is a spacious room with a king-size bed, a separate living area, and a private balcony. The room is perfect for business travelers or guests who want a little extra space to relax and unwind.\",\r\n\t\tprice: 30000,\r\n\t\tbed_size: \"King Size\",\r\n\t\tno_of_guests: 4,\r\n\t\timage1: \"/assets/room1.svg\",\r\n\t\timage2: \"/assets/room1.svg\",\r\n\t\timage3: \"/assets/room1.svg\",\r\n\t\timage4: \"/assets/room1.svg\",\r\n\t\timage5: \"/assets/room1.svg\",\r\n\t},\r\n\t{\r\n\t\tid: 3,\r\n\t\tname: \"Standard Room\",\r\n\t\troute: \"standard-room\",\r\n\t\tdescription:\r\n\t\t\t\"The Standard Room is a comfortable room with a king-size bed and a private balcony. The room is perfect for couples or solo travelers looking for a cozy and relaxing stay.\",\r\n\t\tprice: 25000,\r\n\t\tbed_size: \"King Size\",\r\n\t\tno_of_guests: 4,\r\n\t\timage1: \"/assets/room1.svg\",\r\n\t\timage2: \"/assets/room1.svg\",\r\n\t\timage3: \"/assets/room1.svg\",\r\n\t\timage4: \"/assets/room1.svg\",\r\n\t\timage5: \"/assets/room1.svg\",\r\n\t},\r\n\t{\r\n\t\tid: 4,\r\n\t\tname: \"Kings Size Room 1\",\r\n\t\troute: \"kings-size-room-1\",\r\n\t\tdescription:\r\n\t\t\t\"The Kings Size Room 1 is a spacious room with a king-size bed, a separate living area, and a private balcony. The room is perfect for business travelers or guests who want a little extra space to relax and unwind.\",\r\n\t\tprice: 25000,\r\n\t\tbed_size: \"King Size\",\r\n\t\tno_of_guests: 4,\r\n\t\timage1: \"/assets/room1.svg\",\r\n\t\timage2: \"/assets/room1.svg\",\r\n\t\timage3: \"/assets/room1.svg\",\r\n\t\timage4: \"/assets/room1.svg\",\r\n\t\timage5: \"/assets/room1.svg\",\r\n\t},\r\n\t{\r\n\t\tid: 5,\r\n\t\tname: \"Kings Single Room 2\",\r\n\t\troute: \"kings-single-room-2\",\r\n\t\tdescription:\r\n\t\t\t\"The Kings Single Room 2 is a comfortable room with a king-size bed and a private balcony. The room is perfect for couples or solo travelers looking for a cozy and relaxing stay.\",\r\n\t\tprice: 20000,\r\n\t\tbed_size: \"King Size\",\r\n\t\tno_of_guests: 4,\r\n\t\timage1: \"/assets/room1.svg\",\r\n\t\timage2: \"/assets/room1.svg\",\r\n\t\timage3: \"/assets/room1.svg\",\r\n\t\timage4: \"/assets/room1.svg\",\r\n\t\timage5: \"/assets/room1.svg\",\r\n\t},\r\n];\r\n"
+        }
+    ]
+}

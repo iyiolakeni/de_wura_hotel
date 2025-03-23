@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/app/room/[id].tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1742641598743,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742641655941,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+\"use client\";\r\n import { useParams } from \"next/navigation\";\r\n import { all_rooms } from \"../model/room\";\r\n \r\n export default function RoomDetail() {\r\n"
+                }
+            ],
+            "date": 1742641598743,
+            "name": "Commit-0",
+            "content": "import { useParams } from \"next/navigation\";\r\nimport { all_rooms } from \"../model/room\";\r\n\r\nexport default function RoomDetail() {\r\n\tconst params = useParams();\r\n\tconst roomId = Number(params.id);\r\n\r\n\tconst room = all_rooms.find((room) => room.id === roomId);\r\n\r\n\tif (!room) return <div>Room Not found</div>;\r\n\r\n\treturn (\r\n\t\t<div>\r\n\t\t\t<h1>Room Detail</h1>\r\n\t\t\t<h2>{room.name}</h2>\r\n\t\t</div>\r\n\t);\r\n}\r\n"
+        }
+    ]
+}

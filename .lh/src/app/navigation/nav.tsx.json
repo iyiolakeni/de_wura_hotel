@@ -1,0 +1,86 @@
+{
+    "sourceFile": "src/app/navigation/nav.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 17,
+            "patches": [
+                {
+                    "date": 1742460874980,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1742461007476,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,8 @@\n \"use client\";\r\n \r\n import Link from \"next/link\";\r\n-import styles from \"./navigation.module.css\";\r\n+import styles from \"./nav.module.css\";\r\n import Image from \"next/image\";\r\n import { usePathname } from \"next/navigation\";\r\n \r\n export const Footer = () => {\r\n"
+                },
+                {
+                    "date": 1742461064146,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -22,20 +22,14 @@\n \t\t\t\t<Link href=\"#\" className={isActive ? styles.active : styles.link}>\r\n \t\t\t\t\tHome\r\n \t\t\t\t</Link>\r\n \t\t\t\t<Link href=\"#services\" className={styles.link}>\r\n-\t\t\t\t\tSkills\r\n+\t\t\t\t\tRooms\r\n \t\t\t\t</Link>\r\n \t\t\t\t<Link href=\"#projects\" className={styles.link}>\r\n-\t\t\t\t\tProjects\r\n+\t\t\t\t\tAmenities\r\n \t\t\t\t</Link>\r\n \t\t\t\t<Link href=\"#contact\" className={styles.link}>\r\n-\t\t\t\t\tExperience\r\n-\t\t\t\t</Link>\r\n-\t\t\t\t<Link href=\"#contact\" className={styles.link}>\r\n-\t\t\t\t\tService\r\n-\t\t\t\t</Link>\r\n-\t\t\t\t<Link href=\"#contact\" className={styles.link}>\r\n \t\t\t\t\tContact\r\n \t\t\t\t</Link>\r\n \t\t\t</div>\r\n \t\t</div>\r\n"
+                },
+                {
+                    "date": 1742461097600,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \tconst isActive = activeLink === \"/\" ? styles.active : \"\";\r\n \treturn (\r\n \t\t<div className={styles.header}>\r\n \t\t\t<div className={styles.logo}>\r\n-\t\t\t\t<Image src=\"/globe.svg\" alt=\"Logo\" width={40} height={40} />\r\n+\t\t\t\t<Image src=\"/assets/logo.svg\" alt=\"Logo\" width={40} height={40} />\r\n \t\t\t</div>\r\n \t\t\t<div className={styles.nav}>\r\n \t\t\t\t<Link href=\"#\" className={isActive ? styles.active : styles.link}>\r\n \t\t\t\t\tHome\r\n"
+                },
+                {
+                    "date": 1742461113573,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,9 +15,9 @@\n \tconst isActive = activeLink === \"/\" ? styles.active : \"\";\r\n \treturn (\r\n \t\t<div className={styles.header}>\r\n \t\t\t<div className={styles.logo}>\r\n-\t\t\t\t<Image src=\"/assets/logo.svg\" alt=\"Logo\" width={40} height={40} />\r\n+\t\t\t\t<Image src=\"/assets/logo.jpeg\" alt=\"Logo\" width={40} height={40} />\r\n \t\t\t</div>\r\n \t\t\t<div className={styles.nav}>\r\n \t\t\t\t<Link href=\"#\" className={isActive ? styles.active : styles.link}>\r\n \t\t\t\t\tHome\r\n"
+                },
+                {
+                    "date": 1742461522430,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,13 @@\n import Image from \"next/image\";\r\n import { usePathname } from \"next/navigation\";\r\n \r\n export const Footer = () => {\r\n-\treturn <div className={styles.footer}></div>;\r\n+\treturn (\r\n+\t\t<div className={styles.footer}>\r\n+\t\t\t<div className=\"{styles.footer_container}\"></div>\r\n+\t\t</div>\r\n+\t);\r\n };\r\n \r\n export const Header = () => {\r\n \tconst activeLink = usePathname();\r\n"
+                },
+                {
+                    "date": 1742461789164,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,20 @@\n \r\n export const Footer = () => {\r\n \treturn (\r\n \t\t<div className={styles.footer}>\r\n-\t\t\t<div className=\"{styles.footer_container}\"></div>\r\n+\t\t\t<div className=\"{styles.footer_container}\">\r\n+\t\t\t\t<div className=\"content-1\">\r\n+\t\t\t\t\t<Image src=\"/assets/logo.jpeg\" alt=\"Logo\" width={40} height={40} />\r\n+\t\t\t\t\t<p>\r\n+\t\t\t\t\t\tExperience luxury beyond compare at our exotic place, where every\r\n+\t\t\t\t\t\tmoment is crafted to perfection\r\n+\t\t\t\t\t</p>\r\n+\t\t\t\t</div>\r\n+\t\t\t\t<div className=\"content-1\"></div>\r\n+\t\t\t\t<div className=\"content-1\"></div>\r\n+\t\t\t\t<div className=\"content-1\"></div>\r\n+\t\t\t</div>\r\n \t\t</div>\r\n \t);\r\n };\r\n \r\n"
+                },
+                {
+                    "date": 1742461822532,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,9 @@\n \r\n export const Footer = () => {\r\n \treturn (\r\n \t\t<div className={styles.footer}>\r\n-\t\t\t<div className=\"{styles.footer_container}\">\r\n+\t\t\t<div className={styles.footer_container}>\r\n \t\t\t\t<div className=\"content-1\">\r\n \t\t\t\t\t<Image src=\"/assets/logo.jpeg\" alt=\"Logo\" width={40} height={40} />\r\n \t\t\t\t\t<p>\r\n \t\t\t\t\t\tExperience luxury beyond compare at our exotic place, where every\r\n"
+                },
+                {
+                    "date": 1742462611661,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -15,11 +15,47 @@\n \t\t\t\t\t\tExperience luxury beyond compare at our exotic place, where every\r\n \t\t\t\t\t\tmoment is crafted to perfection\r\n \t\t\t\t\t</p>\r\n \t\t\t\t</div>\r\n+\t\t\t\t<div className=\"content-1\">\r\n+\t\t\t\t\t<h3>Quick Links</h3>\r\n+\t\t\t\t\t<ul>\r\n+\t\t\t\t\t\t<li>\r\n+\t\t\t\t\t\t\t<Link href=\"/about\">About Us</Link>\r\n+\t\t\t\t\t\t</li>\r\n+\t\t\t\t\t\t<li>\r\n+\t\t\t\t\t\t\t<Link href=\"/about\">Rooms</Link>\r\n+\t\t\t\t\t\t</li>\r\n+\t\t\t\t\t\t<li>\r\n+\t\t\t\t\t\t\t<Link href=\"/about\">Amenities</Link>\r\n+\t\t\t\t\t\t</li>\r\n+\t\t\t\t\t\t<li>\r\n+\t\t\t\t\t\t\t<Link href=\"/about\">Club House</Link>\r\n+\t\t\t\t\t\t</li>\r\n+\t\t\t\t\t</ul>\r\n+\t\t\t\t</div>\r\n+\t\t\t\t<div className=\"content-1\">\r\n+\t\t\t\t\t<h3>Contact Us</h3>\r\n+\t\t\t\t\t<div className={styles.row}>\r\n+\t\t\t\t\t\t<Image\r\n+\t\t\t\t\t\t\tsrc=\"/assets/location.svg\"\r\n+\t\t\t\t\t\t\talt=\"Phone\"\r\n+\t\t\t\t\t\t\twidth={20}\r\n+\t\t\t\t\t\t\theight={20}\r\n+\t\t\t\t\t\t/>\r\n+\t\t\t\t\t\t<p>9, Oyekunle Street, Ijaiye, Meiran, Lagos</p>\r\n+\t\t\t\t\t</div>\r\n+\t\t\t\t\t<div className={styles.row}>\r\n+\t\t\t\t\t\t<Image src=\"/assets/phone.svg\" alt=\"Phone\" width={20} height={20} />\r\n+\t\t\t\t\t\t<p>+91 9876543210</p>\r\n+\t\t\t\t\t</div>\r\n+\t\t\t\t\t<div className={styles.row}>\r\n+\t\t\t\t\t\t<Image src=\"/assets/email.svg\" alt=\"Mail\" width={20} height={20} />\r\n+\t\t\t\t\t\t<p>info@luxuryhotel.com</p>\r\n+\t\t\t\t\t</div>\r\n+\t\t\t\t\t<div className={styles.row}></div>\r\n+\t\t\t\t</div>\r\n \t\t\t\t<div className=\"content-1\"></div>\r\n-\t\t\t\t<div className=\"content-1\"></div>\r\n-\t\t\t\t<div className=\"content-1\"></div>\r\n \t\t\t</div>\r\n \t\t</div>\r\n \t);\r\n };\r\n"
+                },
+                {
+                    "date": 1742463300947,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,9 +3,14 @@\n import Link from \"next/link\";\r\n import styles from \"./nav.module.css\";\r\n import Image from \"next/image\";\r\n import { usePathname } from \"next/navigation\";\r\n+import dynamic from \"next/dynamic\";\r\n \r\n+const MapComponent = dynamic(() => import(\"../components/MapComponent\"), {\r\n+\tssr: false,\r\n+});\r\n+\r\n export const Footer = () => {\r\n \treturn (\r\n \t\t<div className={styles.footer}>\r\n \t\t\t<div className={styles.footer_container}>\r\n@@ -53,9 +58,12 @@\n \t\t\t\t\t\t<p>info@luxuryhotel.com</p>\r\n \t\t\t\t\t</div>\r\n \t\t\t\t\t<div className={styles.row}></div>\r\n \t\t\t\t</div>\r\n-\t\t\t\t<div className=\"content-1\"></div>\r\n+\t\t\t\t<div className=\"content-1\">\r\n+\t\t\t\t\t<h3>Our Location</h3>\r\n+\t\t\t\t\t<MapComponent />\r\n+\t\t\t\t</div>\r\n \t\t\t</div>\r\n \t\t</div>\r\n \t);\r\n };\r\n"
+                },
+                {
+                    "date": 1742466659107,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -20,11 +20,11 @@\n \t\t\t\t\t\tExperience luxury beyond compare at our exotic place, where every\r\n \t\t\t\t\t\tmoment is crafted to perfection\r\n \t\t\t\t\t</p>\r\n \t\t\t\t</div>\r\n-\t\t\t\t<div className=\"content-1\">\r\n+\t\t\t\t<div className={styles.content_1}>\r\n \t\t\t\t\t<h3>Quick Links</h3>\r\n-\t\t\t\t\t<ul>\r\n+\t\t\t\t\t<ul className={styles.list}>\r\n \t\t\t\t\t\t<li>\r\n \t\t\t\t\t\t\t<Link href=\"/about\">About Us</Link>\r\n \t\t\t\t\t\t</li>\r\n \t\t\t\t\t\t<li>\r\n@@ -37,9 +37,9 @@\n \t\t\t\t\t\t\t<Link href=\"/about\">Club House</Link>\r\n \t\t\t\t\t\t</li>\r\n \t\t\t\t\t</ul>\r\n \t\t\t\t</div>\r\n-\t\t\t\t<div className=\"content-1\">\r\n+\t\t\t\t<div className={styles.content_1}>\r\n \t\t\t\t\t<h3>Contact Us</h3>\r\n \t\t\t\t\t<div className={styles.row}>\r\n \t\t\t\t\t\t<Image\r\n \t\t\t\t\t\t\tsrc=\"/assets/location.svg\"\r\n@@ -58,9 +58,9 @@\n \t\t\t\t\t\t<p>info@luxuryhotel.com</p>\r\n \t\t\t\t\t</div>\r\n \t\t\t\t\t<div className={styles.row}></div>\r\n \t\t\t\t</div>\r\n-\t\t\t\t<div className=\"content-1\">\r\n+\t\t\t\t<div className={styles.content_1}>\r\n \t\t\t\t\t<h3>Our Location</h3>\r\n \t\t\t\t\t<MapComponent />\r\n \t\t\t\t</div>\r\n \t\t\t</div>\r\n"
+                },
+                {
+                    "date": 1742466825083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -13,9 +13,9 @@\n export const Footer = () => {\r\n \treturn (\r\n \t\t<div className={styles.footer}>\r\n \t\t\t<div className={styles.footer_container}>\r\n-\t\t\t\t<div className=\"content-1\">\r\n+\t\t\t\t<div className={styles.content_1}>\r\n \t\t\t\t\t<Image src=\"/assets/logo.jpeg\" alt=\"Logo\" width={40} height={40} />\r\n \t\t\t\t\t<p>\r\n \t\t\t\t\t\tExperience luxury beyond compare at our exotic place, where every\r\n \t\t\t\t\t\tmoment is crafted to perfection\r\n"
+                },
+                {
+                    "date": 1742596396338,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n \t\t\t\t\t\t<li>\r\n \t\t\t\t\t\t\t<Link href=\"/about\">About Us</Link>\r\n \t\t\t\t\t\t</li>\r\n \t\t\t\t\t\t<li>\r\n-\t\t\t\t\t\t\t<Link href=\"/about\">Rooms</Link>\r\n+\t\t\t\t\t\t\t<Link href=\"/room\">Rooms</Link>\r\n \t\t\t\t\t\t</li>\r\n \t\t\t\t\t\t<li>\r\n \t\t\t\t\t\t\t<Link href=\"/about\">Amenities</Link>\r\n \t\t\t\t\t\t</li>\r\n"
+                },
+                {
+                    "date": 1742596588893,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,9 @@\n \t\t\t<div className={styles.nav}>\r\n \t\t\t\t<Link href=\"#\" className={isActive ? styles.active : styles.link}>\r\n \t\t\t\t\tHome\r\n \t\t\t\t</Link>\r\n-\t\t\t\t<Link href=\"#services\" className={styles.link}>\r\n+\t\t\t\t<Link href=\"#room\" className={styles.link}>\r\n \t\t\t\t\tRooms\r\n \t\t\t\t</Link>\r\n \t\t\t\t<Link href=\"#projects\" className={styles.link}>\r\n \t\t\t\t\tAmenities\r\n"
+                },
+                {
+                    "date": 1742596624547,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,9 +80,9 @@\n \t\t\t<div className={styles.nav}>\r\n \t\t\t\t<Link href=\"#\" className={isActive ? styles.active : styles.link}>\r\n \t\t\t\t\tHome\r\n \t\t\t\t</Link>\r\n-\t\t\t\t<Link href=\"#room\" className={styles.link}>\r\n+\t\t\t\t<Link href=\"/room\" className={styles.link}>\r\n \t\t\t\t\tRooms\r\n \t\t\t\t</Link>\r\n \t\t\t\t<Link href=\"#projects\" className={styles.link}>\r\n \t\t\t\t\tAmenities\r\n"
+                },
+                {
+                    "date": 1742596751816,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -80,15 +80,19 @@\n \t\t\t<div className={styles.nav}>\r\n \t\t\t\t<Link href=\"#\" className={isActive ? styles.active : styles.link}>\r\n \t\t\t\t\tHome\r\n \t\t\t\t</Link>\r\n-\t\t\t\t<Link href=\"/room\" className={styles.link}>\r\n+\t\t\t\t<Link href=\"/room\" className={isActive ? styles.active : styles.link}>\r\n \t\t\t\t\tRooms\r\n \t\t\t\t</Link>\r\n-\t\t\t\t<Link href=\"#projects\" className={styles.link}>\r\n+\t\t\t\t<Link\r\n+\t\t\t\t\thref=\"#projects\"\r\n+\t\t\t\t\tclassName={isActive ? styles.active : styles.link}>\r\n \t\t\t\t\tAmenities\r\n \t\t\t\t</Link>\r\n-\t\t\t\t<Link href=\"#contact\" className={styles.link}>\r\n+\t\t\t\t<Link\r\n+\t\t\t\t\thref=\"#contact\"\r\n+\t\t\t\t\tclassName={isActive ? styles.active : styles.link}>\r\n \t\t\t\t\tContact\r\n \t\t\t\t</Link>\r\n \t\t\t</div>\r\n \t\t</div>\r\n"
+                },
+                {
+                    "date": 1742604430555,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -77,9 +77,9 @@\n \t\t\t<div className={styles.logo}>\r\n \t\t\t\t<Image src=\"/assets/logo.jpeg\" alt=\"Logo\" width={40} height={40} />\r\n \t\t\t</div>\r\n \t\t\t<div className={styles.nav}>\r\n-\t\t\t\t<Link href=\"#\" className={isActive ? styles.active : styles.link}>\r\n+\t\t\t\t<Link href=\"/\" className={isActive ? styles.active : styles.link}>\r\n \t\t\t\t\tHome\r\n \t\t\t\t</Link>\r\n \t\t\t\t<Link href=\"/room\" className={isActive ? styles.active : styles.link}>\r\n \t\t\t\t\tRooms\r\n"
+                },
+                {
+                    "date": 1742638767895,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,29 +70,32 @@\n \r\n export const Header = () => {\r\n \tconst activeLink = usePathname();\r\n \r\n-\tconst isActive = activeLink === \"/\" ? styles.active : \"\";\r\n \treturn (\r\n \t\t<div className={styles.header}>\r\n \t\t\t<div className={styles.logo}>\r\n \t\t\t\t<Image src=\"/assets/logo.jpeg\" alt=\"Logo\" width={40} height={40} />\r\n \t\t\t</div>\r\n \t\t\t<div className={styles.nav}>\r\n-\t\t\t\t<Link href=\"/\" className={isActive ? styles.active : styles.link}>\r\n+\t\t\t\t<Link\r\n+\t\t\t\t\thref=\"/\"\r\n+\t\t\t\t\tclassName={activeLink === \"/\" ? styles.active : styles.link}>\r\n \t\t\t\t\tHome\r\n \t\t\t\t</Link>\r\n-\t\t\t\t<Link href=\"/room\" className={isActive ? styles.active : styles.link}>\r\n+\t\t\t\t<Link\r\n+\t\t\t\t\thref=\"/room\"\r\n+\t\t\t\t\tclassName={activeLink === \"/room\" ? styles.active : styles.link}>\r\n \t\t\t\t\tRooms\r\n \t\t\t\t</Link>\r\n \t\t\t\t<Link\r\n \t\t\t\t\thref=\"#projects\"\r\n-\t\t\t\t\tclassName={isActive ? styles.active : styles.link}>\r\n+\t\t\t\t\tclassName={activeLink === \"#projects\" ? styles.active : styles.link}>\r\n \t\t\t\t\tAmenities\r\n \t\t\t\t</Link>\r\n \t\t\t\t<Link\r\n \t\t\t\t\thref=\"#contact\"\r\n-\t\t\t\t\tclassName={isActive ? styles.active : styles.link}>\r\n+\t\t\t\t\tclassName={activeLink === \"#contact\" ? styles.active : styles.link}>\r\n \t\t\t\t\tContact\r\n \t\t\t\t</Link>\r\n \t\t\t</div>\r\n \t\t</div>\r\n"
+                }
+            ],
+            "date": 1742460874980,
+            "name": "Commit-0",
+            "content": "\"use client\";\r\n\r\nimport Link from \"next/link\";\r\nimport styles from \"./navigation.module.css\";\r\nimport Image from \"next/image\";\r\nimport { usePathname } from \"next/navigation\";\r\n\r\nexport const Footer = () => {\r\n\treturn <div className={styles.footer}></div>;\r\n};\r\n\r\nexport const Header = () => {\r\n\tconst activeLink = usePathname();\r\n\r\n\tconst isActive = activeLink === \"/\" ? styles.active : \"\";\r\n\treturn (\r\n\t\t<div className={styles.header}>\r\n\t\t\t<div className={styles.logo}>\r\n\t\t\t\t<Image src=\"/globe.svg\" alt=\"Logo\" width={40} height={40} />\r\n\t\t\t</div>\r\n\t\t\t<div className={styles.nav}>\r\n\t\t\t\t<Link href=\"#\" className={isActive ? styles.active : styles.link}>\r\n\t\t\t\t\tHome\r\n\t\t\t\t</Link>\r\n\t\t\t\t<Link href=\"#services\" className={styles.link}>\r\n\t\t\t\t\tSkills\r\n\t\t\t\t</Link>\r\n\t\t\t\t<Link href=\"#projects\" className={styles.link}>\r\n\t\t\t\t\tProjects\r\n\t\t\t\t</Link>\r\n\t\t\t\t<Link href=\"#contact\" className={styles.link}>\r\n\t\t\t\t\tExperience\r\n\t\t\t\t</Link>\r\n\t\t\t\t<Link href=\"#contact\" className={styles.link}>\r\n\t\t\t\t\tService\r\n\t\t\t\t</Link>\r\n\t\t\t\t<Link href=\"#contact\" className={styles.link}>\r\n\t\t\t\t\tContact\r\n\t\t\t\t</Link>\r\n\t\t\t</div>\r\n\t\t</div>\r\n\t);\r\n};\r\n"
+        }
+    ]
+}
