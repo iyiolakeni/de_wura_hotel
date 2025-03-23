@@ -2,7 +2,7 @@
 	padding: 20px;
 	display: grid;
 	width: 40%;
-	gap: 10px;
+	gap: 30px;
 }
 
 .container {
@@ -25,6 +25,8 @@
 
 .amenities_details {
 	display: flex;
+	width: 20%;
+	flex-wrap: wrap;
 	gap: 10px;
 	padding: 10px 20px;
 	border-radius: 10px;
