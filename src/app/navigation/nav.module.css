@@ -1,64 +1,130 @@
 .footer {
-	padding: 20px;
-	background-color: #111827;
+  padding: 20px;
+  background-color: #111827;
 }
 
 .footer_container {
-	display: flex;
-	align-items: top;
-	justify-content: space-evenly;
-	padding: 20px;
-	color: white;
-	border-bottom: 1px solid #767b85;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content: space-evenly;
+  padding: 20px;
+  color: white;
+  border-bottom: 1px solid #767b85;
 }
 
 .icon {
-	display: flex;
-	align-items: center;
-	gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	padding: 20px;
-	/* background: linear-gradient(to right, rgb(255, 251, 251), #6b7280, 0.1); */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  /* background: linear-gradient(to right, rgb(255, 251, 251), #6b7280, 0.1); */
 }
 
 .nav {
-	display: flex;
-	align-items: center;
-	gap: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .link {
-	font: 500 16px "Roboto", sans-serif;
-	color: #111827;
+  font: 500 16px "Roboto", sans-serif;
+  color: #111827;
 }
 
 .link:hover {
-	color: #2563eb;
+  color: #2563eb;
 }
 
 .active {
-	color: #2563eb;
-	font: 700 16px "Roboto", sans-serif;
+  color: #2563eb;
+  font: 700 16px "Roboto", sans-serif;
 }
 
 .row {
-	display: flex;
-	align-items: center;
-	gap: 20px;
-	margin: 20px 0;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 20px 0;
 }
 
 .content_1 {
-	padding: 20px;
-	width: 25%;
+  padding: 20px;
+  width: 25%;
 }
 
 ul.list {
-	list-style-type: none;
-	margin: 20px 0;
+  list-style-type: none;
+  margin: 20px 0;
+}
+
+@media (max-width: 575px) {
+  .header {
+    padding: 10px;
+  }
+  .nav {
+    gap: 10px;
+  }
+  .link {
+    font-size: 13px;
+    color: #111827;
+  }
+  .active {
+    color: #2563eb;
+    font-size: 13px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .content_1 {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Medium Devices (Small Laptops) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .header {
+    padding: 10px;
+  }
+  .nav {
+    gap: 10px;
+  }
+  .link {
+    font-size: 13px;
+    color: #111827;
+  }
+  .active {
+    color: #2563eb;
+    font-size: 13px;
+  }
+
+  .footer {
+    padding: 10px;
+  }
+
+  .content_1 {
+    width: 50%;
+    padding: 10px;
+  }
+
+  .content_1 p {
+    font-size: 15px;
+  }
+
+  .content_1 li {
+    font-size: 15px;
+  }
+}
+
+/* Large Devices (Laptops, Desktops) */
+@media (min-width: 992px) and (max-width: 1199px) {
 }
