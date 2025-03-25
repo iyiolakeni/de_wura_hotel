@@ -24,7 +24,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 20px;
-  /* background: linear-gradient(to right, rgb(255, 251, 251), #6b7280, 0.1); */
+  background-color: whitesmoke;
 }
 
 .nav {
