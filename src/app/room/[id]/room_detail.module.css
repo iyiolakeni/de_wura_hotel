@@ -7,6 +7,7 @@
 
 .container {
   background-color: rgb(230, 230, 230);
+  color: black;
 }
 
 .flex {
@@ -31,7 +32,8 @@
   align-items: center;
   padding: 10px 20px;
   border-radius: 10px;
-  background-color: white;
+  background-color: whitesmoke;
+  color: black;
 }
 
 .amenities {
