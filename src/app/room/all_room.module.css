@@ -103,8 +103,8 @@
 
 .room_content button {
   padding: 12px 32px;
-  background-color: inherit;
-  color: inherit;
+  background-color: #4b5563;
+  color: #ffffff;
   border: none;
   border-radius: 5px;
   font: medium 16px "Roboto", sans-serif;
