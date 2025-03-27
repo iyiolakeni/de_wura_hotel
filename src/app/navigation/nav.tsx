@@ -40,41 +40,25 @@ export const Footer = () => {
 				</div>
 				<div className={styles.content_1}>
 					<h3>Contact Us</h3>
-					<div className={styles.row}>
-						<Image
-							src="/assets/location.svg"
-							alt="Phone"
-							width={20}
-							height={20}
-						/>
-						<p>9/11 Lekan Oyekunle Street Meiran Lagos</p>
-					</div>
-					<div className={styles.row}>
-						<Image src="/assets/phone.svg" alt="Phone" width={20} height={20} />
-						<div>
-							<p>
-								<Link href="tel:+2348101035359">+2348101035359,</Link>
-							</p>
-							<p>
-								<Link href="tel:08088476099">08088476099,</Link>
-							</p>
-							<p>
-								<Link href="tel:08052371740">08052371740</Link>
-							</p>
-							<p>
-								<Link href="tel:08101035359">08101035359</Link>
-							</p>
-						</div>
-					</div>
-					<div className={styles.row}>
-						<Image src="/assets/email.svg" alt="Mail" width={20} height={20} />
-						<p>
-							<Link href="mailto:dewuraalfred@gmail.com">
-								dewuraalfred@gmail.com
-							</Link>
-						</p>
-					</div>
-					<div className={styles.row}></div>
+
+					<p>9/11 Lekan Oyekunle Street Meiran Lagos</p>
+					<p>
+						<Link href="tel:+2348101035359">+2348101035359,</Link>
+					</p>
+					<p>
+						<Link href="tel:08088476099">08088476099,</Link>
+					</p>
+					<p>
+						<Link href="tel:08052371740">08052371740</Link>
+					</p>
+					<p>
+						<Link href="tel:08101035359">08101035359</Link>
+					</p>
+					<p>
+						<Link href="mailto:dewuraalfred@gmail.com">
+							dewuraalfred@gmail.com
+						</Link>
+					</p>
 				</div>
 				<div className={styles.content_1}>
 					<h3>Our Location</h3>

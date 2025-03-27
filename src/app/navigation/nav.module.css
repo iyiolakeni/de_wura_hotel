@@ -55,8 +55,16 @@
 }
 
 .content_1 {
+	display: grid;
+	gap: 10px;
 	padding: 20px;
 	width: 25%;
+	align-content: center;
+}
+
+.content_1 li,
+.content_1 p {
+	padding: 10px 0;
 }
 
 ul.list {
