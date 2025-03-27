@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 45,
+            "activePatchIndex": 49,
             "patches": [
                 {
                     "date": 1743081817903,
@@ -188,6 +188,22 @@
                 {
                     "date": 1743094310758,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,11 +3,12 @@\n \tjustify-content: center;\r\n \talign-items: center;\r\n \tbackground-image: url(\"/assets/bg_amenity.svg\");\r\n \tbackground-repeat: no-repeat;\r\n-\tbackground-position: center center;\r\n+\tbackground-position: center;\r\n \tbackground-size: cover;\r\n \theight: 40vh;\r\n+\tposition: relative;\r\n }\r\n \r\n .amenity_header::before {\r\n \tcontent: \"\";\r\n@@ -62,64 +63,4 @@\n \theight: 500px;\r\n \tobject-fit: cover;\r\n \tborder-radius: 10px;\r\n }\r\n-.amenity_header {\r\n-\tdisplay: grid;\r\n-\tjustify-content: center;\r\n-\talign-items: center;\r\n-\tbackground-image: url(\"/assets/bg_amenity.svg\");\r\n-\tbackground-repeat: no-repeat;\r\n-\tbackground-position: center center;\r\n-\tbackground-size: cover;\r\n-\theight: 40vh;\r\n-}\r\n-\r\n-.amenity_header:before {\r\n-\tcontent: \"\";\r\n-\tposition: absolute;\r\n-\ttop: 0;\r\n-\tleft: 0;\r\n-\twidth: 100%;\r\n-\theight: 40vh;\r\n-\tbackground-color: rgba(0, 0, 0, 0.4);\r\n-\tz-index: 1;\r\n-}\r\n-\r\n-.main {\r\n-\tdisplay: grid;\r\n-\tjustify-items: center;\r\n-\tfont-family: \"Roboto\", sans-serif;\r\n-\tcolor: white;\r\n-\tz-index: 2;\r\n-}\r\n-\r\n-.main h1 {\r\n-\tfont: bold 48px \"Roboto\", sans-serif;\r\n-}\r\n-\r\n-.main p {\r\n-\tfont: 400 20px \"Roboto\", sans-serif;\r\n-}\r\n-\r\n-.resource {\r\n-\tpadding: 20px;\r\n-}\r\n-\r\n-.resource_content {\r\n-\tdisplay: flex;\r\n-\tflex-wrap: wrap;\r\n-\tpadding: 20px;\r\n-\tjustify-content: space-between;\r\n-}\r\n-\r\n-.resource_part {\r\n-\twidth: 50%;\r\n-\tpadding: 20px;\r\n-}\r\n-\r\n-.image_container img {\r\n-\twidth: 100%;\r\n-\theight: 550px;\r\n-\tobject-fit: cover;\r\n-\tborder-radius: 10px;\r\n-}\r\n"
+                },
+                {
+                    "date": 1743096400604,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -28,19 +28,19 @@\n \r\n .main {\r\n \tdisplay: grid;\r\n \tjustify-items: center;\r\n-\tfont-family: \"Roboto\", sans-serif;\r\n+\tfont-family: \"Cinzel\", serif;\r\n \tcolor: white;\r\n \tz-index: 2;\r\n }\r\n \r\n .main h1 {\r\n-\tfont: bold 48px \"Roboto\", sans-serif;\r\n+\tfont: bold 48px \"Cinzel\", serif;\r\n }\r\n \r\n .main p {\r\n-\tfont: 400 20px \"Roboto\", sans-serif;\r\n+\tfont: 400 20px \"Cinzel\", serif;\r\n }\r\n \r\n .resource {\r\n \tpadding: 20px;\r\n"
+                },
+                {
+                    "date": 1743096418332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -38,9 +38,9 @@\n \tfont: bold 48px \"Cinzel\", serif;\r\n }\r\n \r\n .main p {\r\n-\tfont: 400 20px \"Cinzel\", serif;\r\n+\tfont: 400 20px \"Nunito\", serif;\r\n }\r\n \r\n .resource {\r\n \tpadding: 20px;\r\n"
+                },
+                {
+                    "date": 1743096492996,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -57,8 +57,12 @@\n \twidth: 50%;\r\n \tpadding: 20px;\r\n }\r\n \r\n+.resource_detail p {\r\n+\tfont: 400 16px \"Nunito\", serif;\r\n+}\r\n+\r\n .image_container img {\r\n \twidth: 100%;\r\n \theight: 500px;\r\n \tobject-fit: cover;\r\n"
+                },
+                {
+                    "date": 1743096508332,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -61,8 +61,12 @@\n .resource_detail p {\r\n \tfont: 400 16px \"Nunito\", serif;\r\n }\r\n \r\n+.resource_detail h2 {\r\n+\tfont: bold 24px \"Cinzel\", serif;\r\n+}\r\n+\r\n .image_container img {\r\n \twidth: 100%;\r\n \theight: 500px;\r\n \tobject-fit: cover;\r\n"
                 }
             ],
             "date": 1743081817903,

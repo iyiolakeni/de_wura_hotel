@@ -6,8 +6,9 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import dynamic from "next/dynamic";
 
-const MapComponent = dynamic(() => import("../components/MapComponent"), {
+const MapComponent = dynamic(() => import("../components/map/map"), {
 	ssr: false,
+	loading: () => <div>Loading map...</div>,
 });
 
 export const Footer = () => {

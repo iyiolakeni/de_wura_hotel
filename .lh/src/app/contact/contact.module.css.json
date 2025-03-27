@@ -1,0 +1,102 @@
+{
+    "sourceFile": "src/app/contact/contact.module.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 21,
+            "patches": [
+                {
+                    "date": 1743097496739,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1743098904964,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,6 +1,6 @@\n .contactPage {\r\n-\tfont-family: Arial, sans-serif;\r\n+\tfont-family: \"Cinzel\", sans-serif;\r\n \tmax-width: 1200px;\r\n \tmargin: 0 auto;\r\n \tpadding: 20px;\r\n }\r\n"
+                },
+                {
+                    "date": 1743099056222,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,8 +11,10 @@\n }\r\n \r\n .getInTouch {\r\n \tflex: 1;\r\n+\tbackground-color: whitesmoke;\r\n+\tborder-radius: 5px;\r\n }\r\n \r\n .contactInfo {\r\n \tflex: 1;\r\n"
+                },
+                {
+                    "date": 1743099099078,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,11 @@\n \r\n .getInTouch {\r\n \tflex: 1;\r\n \tbackground-color: whitesmoke;\r\n+\tpadding: 20px;\r\n \tborder-radius: 5px;\r\n+\tbox-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\r\n }\r\n \r\n .contactInfo {\r\n \tflex: 1;\r\n"
+                },
+                {
+                    "date": 1743099109836,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,8 +2,9 @@\n \tfont-family: \"Cinzel\", sans-serif;\r\n \tmax-width: 1200px;\r\n \tmargin: 0 auto;\r\n \tpadding: 20px;\r\n+\tbackground-color: #f9f9f9;\r\n }\r\n \r\n .contactContainer {\r\n \tdisplay: flex;\r\n"
+                },
+                {
+                    "date": 1743099119235,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -2,9 +2,8 @@\n \tfont-family: \"Cinzel\", sans-serif;\r\n \tmax-width: 1200px;\r\n \tmargin: 0 auto;\r\n \tpadding: 20px;\r\n-\tbackground-color: #f9f9f9;\r\n }\r\n \r\n .contactContainer {\r\n \tdisplay: flex;\r\n"
+                },
+                {
+                    "date": 1743099153022,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -11,9 +11,9 @@\n }\r\n \r\n .getInTouch {\r\n \tflex: 1;\r\n-\tbackground-color: whitesmoke;\r\n+\t/* background-color: rgb(255, 255, 255); */\r\n \tpadding: 20px;\r\n \tborder-radius: 5px;\r\n \tbox-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\r\n }\r\n"
+                },
+                {
+                    "date": 1743099172461,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,9 @@\n \r\n .getInTouch {\r\n \tflex: 1;\r\n \t/* background-color: rgb(255, 255, 255); */\r\n-\tpadding: 20px;\r\n+\tpadding: 40px;\r\n \tborder-radius: 5px;\r\n \tbox-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1743099221138,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,11 @@\n }\r\n \r\n .contactInfo {\r\n \tflex: 1;\r\n+\tpadding: 40px;\r\n+\tborder-radius: 5px;\r\n+\tbox-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\r\n }\r\n \r\n .contactForm .formGroup {\r\n \tmargin-bottom: 15px;\r\n"
+                },
+                {
+                    "date": 1743099292822,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -19,8 +19,11 @@\n }\r\n \r\n .contactInfo {\r\n \tflex: 1;\r\n+}\r\n+\r\n+.infoBlock {\r\n \tpadding: 40px;\r\n \tborder-radius: 5px;\r\n \tbox-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;\r\n }\r\n"
+                },
+                {
+                    "date": 1743099378862,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,8 +70,9 @@\n }\r\n \r\n .socialLinks {\r\n \tdisplay: flex;\r\n+\tjustify-content: center;\r\n \tgap: 15px;\r\n \tmargin-top: 20px;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1743099443079,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,13 @@\n \tmargin: 0 auto;\r\n \tpadding: 20px;\r\n }\r\n \r\n+.contactHeader {\r\n+\ttext-align: center;\r\n+\tmargin-bottom: 40px;\r\n+}\r\n+\r\n .contactContainer {\r\n \tdisplay: flex;\r\n \tgap: 40px;\r\n }\r\n"
+                },
+                {
+                    "date": 1743099535992,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,18 @@\n \tmargin: 0 auto;\r\n \tpadding: 20px;\r\n }\r\n \r\n+.contactPage h1 {\r\n+\tfont-family: \"Cinzel\", serif;\r\n+}\r\n+.contactPage h2 {\r\n+\tfont-family: \"Cinzel\", serif;\r\n+}\r\n+.contactPage p {\r\n+\tfont-family: \"Nunito\", serif;\r\n+}\r\n+\r\n .contactHeader {\r\n \ttext-align: center;\r\n \tmargin-bottom: 40px;\r\n }\r\n"
+                },
+                {
+                    "date": 1743099567452,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -6,8 +6,10 @@\n }\r\n \r\n .contactPage h1 {\r\n \tfont-family: \"Cinzel\", serif;\r\n+\tfont-size: 2.5rem;\r\n+\tmargin-bottom: 2.5rem;\r\n }\r\n .contactPage h2 {\r\n \tfont-family: \"Cinzel\", serif;\r\n }\r\n"
+                },
+                {
+                    "date": 1743099573083,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -7,9 +7,8 @@\n \r\n .contactPage h1 {\r\n \tfont-family: \"Cinzel\", serif;\r\n \tfont-size: 2.5rem;\r\n-\tmargin-bottom: 2.5rem;\r\n }\r\n .contactPage h2 {\r\n \tfont-family: \"Cinzel\", serif;\r\n }\r\n"
+                },
+                {
+                    "date": 1743099585523,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,8 +10,9 @@\n \tfont-size: 2.5rem;\r\n }\r\n .contactPage h2 {\r\n \tfont-family: \"Cinzel\", serif;\r\n+\tmargin-bottom: 20px;\r\n }\r\n .contactPage p {\r\n \tfont-family: \"Nunito\", serif;\r\n }\r\n"
+                },
+                {
+                    "date": 1743099601407,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,9 +9,9 @@\n \tfont-family: \"Cinzel\", serif;\r\n \tfont-size: 2.5rem;\r\n }\r\n .contactPage h2 {\r\n-\tfont-family: \"Cinzel\", serif;\r\n+\tfont-family: \"Nunito\", serif;\r\n \tmargin-bottom: 20px;\r\n }\r\n .contactPage p {\r\n \tfont-family: \"Nunito\", serif;\r\n"
+                },
+                {
+                    "date": 1743100304499,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -92,8 +92,15 @@\n \tgap: 15px;\r\n \tmargin-top: 20px;\r\n }\r\n \r\n+.footer {\r\n+\ttext-align: center;\r\n+\tmargin-top: 40px;\r\n+\tfont-size: 0.9rem;\r\n+\tcolor: #666;\r\n+}\r\n+\r\n .mapContainer iframe {\r\n \tborder-radius: 8px;\r\n \tbox-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n }\r\n"
+                },
+                {
+                    "date": 1743100324394,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -96,11 +96,18 @@\n .footer {\r\n \ttext-align: center;\r\n \tmargin-top: 40px;\r\n \tfont-size: 0.9rem;\r\n-\tcolor: #666;\r\n }\r\n \r\n+.footer h2 {\r\n+\tfont-family: \"Cinzel\", serif;\r\n+\tmargin-bottom: 10px;\r\n+}\r\n+.footer p {\r\n+\tfont-family: \"Nunito\", serif;\r\n+}\r\n+\r\n .mapContainer iframe {\r\n \tborder-radius: 8px;\r\n \tbox-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n }\r\n"
+                },
+                {
+                    "date": 1743100335542,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -100,8 +100,9 @@\n }\r\n \r\n .footer h2 {\r\n \tfont-family: \"Cinzel\", serif;\r\n+\tfont-size: 1.5rem;\r\n \tmargin-bottom: 10px;\r\n }\r\n .footer p {\r\n \tfont-family: \"Nunito\", serif;\r\n"
+                },
+                {
+                    "date": 1743100344345,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -95,9 +95,8 @@\n \r\n .footer {\r\n \ttext-align: center;\r\n \tmargin-top: 40px;\r\n-\tfont-size: 0.9rem;\r\n }\r\n \r\n .footer h2 {\r\n \tfont-family: \"Cinzel\", serif;\r\n"
+                },
+                {
+                    "date": 1743100376929,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -94,9 +94,9 @@\n }\r\n \r\n .footer {\r\n \ttext-align: center;\r\n-\tmargin-top: 40px;\r\n+\tmargin: 40px 0;\r\n }\r\n \r\n .footer h2 {\r\n \tfont-family: \"Cinzel\", serif;\r\n"
+                }
+            ],
+            "date": 1743097496739,
+            "name": "Commit-0",
+            "content": ".contactPage {\r\n\tfont-family: Arial, sans-serif;\r\n\tmax-width: 1200px;\r\n\tmargin: 0 auto;\r\n\tpadding: 20px;\r\n}\r\n\r\n.contactContainer {\r\n\tdisplay: flex;\r\n\tgap: 40px;\r\n}\r\n\r\n.getInTouch {\r\n\tflex: 1;\r\n}\r\n\r\n.contactInfo {\r\n\tflex: 1;\r\n}\r\n\r\n.contactForm .formGroup {\r\n\tmargin-bottom: 15px;\r\n}\r\n\r\n.contactForm label {\r\n\tdisplay: block;\r\n\tmargin-bottom: 5px;\r\n}\r\n\r\n.contactForm input,\r\n.contactForm select,\r\n.contactForm textarea {\r\n\twidth: 100%;\r\n\tpadding: 10px;\r\n\tborder: 1px solid #ddd;\r\n\tborder-radius: 4px;\r\n}\r\n\r\n.contactForm textarea {\r\n\theight: 150px;\r\n}\r\n\r\n.sendMessage {\r\n\tbackground-color: black;\r\n\tcolor: white;\r\n\tborder: none;\r\n\tpadding: 12px 20px;\r\n\tborder-radius: 4px;\r\n\tcursor: pointer;\r\n}\r\n\r\n.contactDetails .detail {\r\n\tdisplay: flex;\r\n\talign-items: center;\r\n\tmargin-bottom: 15px;\r\n}\r\n\r\n.contactDetails .icon {\r\n\tmargin-right: 10px;\r\n}\r\n\r\n.socialLinks {\r\n\tdisplay: flex;\r\n\tgap: 15px;\r\n\tmargin-top: 20px;\r\n}\r\n\r\n.mapContainer iframe {\r\n\tborder-radius: 8px;\r\n\tbox-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\r\n}\r\n\r\n@media (max-width: 768px) {\r\n\t.contactContainer {\r\n\t\tflex-direction: column;\r\n\t}\r\n}\r\n"
+        }
+    ]
+}

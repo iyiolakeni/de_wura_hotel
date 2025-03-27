@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/room/[id]/room_detail.module.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1743096335035,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1743096335035,
+            "name": "Commit-0",
+            "content": ".room_header {\r\n\tpadding: 20px;\r\n\tdisplay: grid;\r\n\twidth: 40%;\r\n\tgap: 30px;\r\n}\r\n\r\n.container {\r\n\tbackground-color: rgb(230, 230, 230);\r\n\tcolor: black;\r\n}\r\n\r\n.flex {\r\n\tdisplay: flex;\r\n\tgap: 8px;\r\n\talign-items: center;\r\n}\r\n\r\n.room_header h1 {\r\n\tfont: bold 30px \"Cinzel\", serif;\r\n}\r\n\r\n.room_header p {\r\n\tfont: normal 16px \"Nunito\", serif;\r\n}\r\n\r\n.amenities_details {\r\n\tdisplay: flex;\r\n\twidth: 20%;\r\n\tflex-wrap: wrap;\r\n\tgap: 10px;\r\n\talign-items: center;\r\n\tpadding: 10px 20px;\r\n\tborder-radius: 10px;\r\n\tbackground-color: whitesmoke;\r\n\tcolor: black;\r\n}\r\n\r\n.amenities {\r\n\tflex-wrap: wrap;\r\n\tdisplay: flex;\r\n\tgap: 20px;\r\n}\r\n\r\n.amenity_container {\r\n\tdisplay: grid;\r\n\tgap: 20px;\r\n\tpadding: 20px;\r\n}\r\n\r\n@media (max-width: 575px) {\r\n\t.room_header {\r\n\t\tgap: 10px;\r\n\t\twidth: 100%;\r\n\t}\r\n\r\n\t.room_header h1 {\r\n\t\tfont-size: 18px;\r\n\t}\r\n\r\n\t.room_header p {\r\n\t\tfont-size: 12px;\r\n\t\ttext-align: justify;\r\n\t}\r\n\r\n\t.amenities_details {\r\n\t\twidth: 45%;\r\n\t\tpadding: 10px 20px;\r\n\t}\r\n\r\n\t.amenities img {\r\n\t\twidth: 15px;\r\n\t}\r\n\r\n\t.amenities {\r\n\t\tgap: 20px;\r\n\t\tfont-size: 14px;\r\n\t}\r\n\r\n\t.amenity_container {\r\n\t\tgap: 15px;\r\n\t\tpadding: 10px;\r\n\t}\r\n}\r\n\r\n/* Medium Devices (Small Laptops) */\r\n@media (min-width: 768px) and (max-width: 991px) {\r\n\t.room_header {\r\n\t\tgap: 10px;\r\n\t\twidth: 60%;\r\n\t}\r\n\r\n\t.room_header h1 {\r\n\t\tfont-size: 22px;\r\n\t}\r\n\r\n\t.room_header p {\r\n\t\tfont-size: 14px;\r\n\t\ttext-align: justify;\r\n\t}\r\n\r\n\t.amenities_details {\r\n\t\twidth: 25%;\r\n\t\tpadding: 10px 20px;\r\n\t}\r\n\r\n\t/* .amenities img {\r\n    width: 15px;\r\n  } */\r\n\r\n\t.amenities {\r\n\t\tgap: 20px;\r\n\t\tfont-size: 14px;\r\n\t}\r\n\r\n\t.amenity_container {\r\n\t\tgap: 15px;\r\n\t\tpadding: 10px;\r\n\t}\r\n}\r\n\r\n/* Large Devices (Laptops, Desktops) */\r\n@media (min-width: 992px) and (max-width: 1199px) {\r\n}\r\n"
+        }
+    ]
+}

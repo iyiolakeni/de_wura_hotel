@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/app/components/testimonials/guest-reviews.module.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1743096627849,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1743096627849,
+            "name": "Commit-0",
+            "content": ".reviewsContainer {\n\tmax-width: 1200px;\n\tmargin: 0 auto;\n\tpadding: 2rem 1rem;\n}\n\n.heading {\n\ttext-align: center;\n\tmargin-bottom: 2rem;\n\tfont: bold 2rem \"Cinzel\", serif;\n\tcolor: #333;\n}\n\n.reviewGrid {\n\tdisplay: grid;\n\tgrid-template-columns: repeat(3, 1fr);\n\tgap: 1.5rem;\n}\n\n.reviewCard {\n\tbackground-color: #f9f9f9;\n\tborder-radius: 10px;\n\tpadding: 1.5rem;\n\ttext-align: center;\n\tbox-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);\n\ttransition: transform 0.3s ease;\n}\n\n.reviewCard:hover {\n\ttransform: scale(1.03);\n}\n\n.starContainer {\n\tdisplay: flex;\n\tjustify-content: center;\n\tmargin-bottom: 1rem;\n}\n\n.star {\n\tcolor: #ddd;\n\tfont-size: 1.5rem;\n\tmargin: 0 0.25rem;\n}\n\n.star.filled {\n\tcolor: #ffd700;\n}\n\n.testimony {\n\tfont-style: italic;\n\tfont-family: \"Nunito\", serif;\n\tcolor: #666;\n\tmargin-bottom: 1rem;\n}\n\n.name {\n\tfont-weight: bold;\n\tcolor: #333;\n}\n\n/* Responsive Design */\n@media screen and (max-width: 1024px) {\n\t.reviewGrid {\n\t\tgrid-template-columns: repeat(2, 1fr);\n\t}\n}\n\n@media screen and (max-width: 768px) {\n\t.reviewGrid {\n\t\tgrid-template-columns: 1fr;\n\t}\n\n\t.heading {\n\t\tfont-size: 1.5rem;\n\t}\n}\n"
+        }
+    ]
+}

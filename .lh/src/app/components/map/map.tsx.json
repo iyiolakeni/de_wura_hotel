@@ -1,0 +1,46 @@
+{
+    "sourceFile": "src/app/components/map/map.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 7,
+            "patches": [
+                {
+                    "date": 1743097327488,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1743098164790,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -12,9 +12,15 @@\n \t\t// Encode the address for URL\r\n \t\tconst encodedAddress = encodeURIComponent(address);\r\n \r\n \t\t// Generate OpenStreetMap URL\r\n-\t\tconst url = `https://www.openstreetmap.org/export/embed.html?bbox=-74.0060,40.7128,-73.9870,40.7220&layer=mapnik&marker=${encodedAddress}`;\r\n+\t\tconst latitude = 6.6449640292590715;\r\n+\t\tconst longitude = 3.270243225338087;\r\n+\t\tconst url = `https://www.openstreetmap.org/export/embed.html?bbox=${\r\n+\t\t\tlongitude - 0.001\r\n+\t\t},${latitude - 0.001},${longitude + 0.001},${\r\n+\t\t\tlatitude + 0.001\r\n+\t\t}&layer=mapnik&marker=${latitude},${longitude}`;\r\n \r\n \t\tsetMapUrl(url);\r\n \t}, [address]);\r\n \r\n"
+                },
+                {
+                    "date": 1743098428398,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,20 +8,15 @@\n export default function MapComponent({ address }: MapComponentProps) {\r\n \tconst [mapUrl, setMapUrl] = useState(\"\");\r\n \r\n \tuseEffect(() => {\r\n-\t\t// Encode the address for URL\r\n-\t\tconst encodedAddress = encodeURIComponent(address);\r\n-\r\n-\t\t// Generate OpenStreetMap URL\r\n+\t\t// Latitude & Longitude (Replace with dynamic values if needed)\r\n \t\tconst latitude = 6.6449640292590715;\r\n \t\tconst longitude = 3.270243225338087;\r\n-\t\tconst url = `https://www.openstreetmap.org/export/embed.html?bbox=${\r\n-\t\t\tlongitude - 0.001\r\n-\t\t},${latitude - 0.001},${longitude + 0.001},${\r\n-\t\t\tlatitude + 0.001\r\n-\t\t}&layer=mapnik&marker=${latitude},${longitude}`;\r\n \r\n+\t\t// Google Maps Embed URL (No API Key Needed)\r\n+\t\tconst url = `https://www.google.com/maps/embed/v1/place?q=${latitude},${longitude}&zoom=15`;\r\n+\r\n \t\tsetMapUrl(url);\r\n \t}, [address]);\r\n \r\n \treturn (\r\n"
+                },
+                {
+                    "date": 1743098496425,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -8,14 +8,14 @@\n export default function MapComponent({ address }: MapComponentProps) {\r\n \tconst [mapUrl, setMapUrl] = useState(\"\");\r\n \r\n \tuseEffect(() => {\r\n-\t\t// Latitude & Longitude (Replace with dynamic values if needed)\r\n+\t\t// Latitude & Longitude (Replace with actual dynamic values)\r\n \t\tconst latitude = 6.6449640292590715;\r\n \t\tconst longitude = 3.270243225338087;\r\n \r\n-\t\t// Google Maps Embed URL (No API Key Needed)\r\n-\t\tconst url = `https://www.google.com/maps/embed/v1/place?q=${latitude},${longitude}&zoom=15`;\r\n+\t\t// Google Maps direct embed URL (No API key needed)\r\n+\t\tconst url = `https://www.google.com/maps?q=${latitude},${longitude}&output=embed`;\r\n \r\n \t\tsetMapUrl(url);\r\n \t}, [address]);\r\n \r\n@@ -27,9 +27,9 @@\n \t\t\t\t\twidth=\"100%\"\r\n \t\t\t\t\theight=\"400\"\r\n \t\t\t\t\tframeBorder=\"0\"\r\n \t\t\t\t\tallowFullScreen\r\n-\t\t\t\t\ttitle=\"Location Map\"></iframe>\r\n+\t\t\t\t\ttitle=\"Google Maps Location\"></iframe>\r\n \t\t\t) : (\r\n \t\t\t\t<div className={styles.mapPlaceholder}>Loading map...</div>\r\n \t\t\t)}\r\n \t\t</div>\r\n"
+                },
+                {
+                    "date": 1743098625474,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,12 +1,8 @@\n import { useState, useEffect } from \"react\";\r\n import styles from \"./map.module.css\";\r\n \r\n-interface MapComponentProps {\r\n-\taddress: string;\r\n-}\r\n-\r\n-export default function MapComponent({ address }: MapComponentProps) {\r\n+export default function MapComponent() {\r\n \tconst [mapUrl, setMapUrl] = useState(\"\");\r\n \r\n \tuseEffect(() => {\r\n \t\t// Latitude & Longitude (Replace with actual dynamic values)\r\n@@ -16,9 +12,9 @@\n \t\t// Google Maps direct embed URL (No API key needed)\r\n \t\tconst url = `https://www.google.com/maps?q=${latitude},${longitude}&output=embed`;\r\n \r\n \t\tsetMapUrl(url);\r\n-\t}, [address]);\r\n+\t}, []);\r\n \r\n \treturn (\r\n \t\t<div className={styles.mapContainer}>\r\n \t\t\t{mapUrl ? (\r\n"
+                },
+                {
+                    "date": 1743098763855,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,4 +1,5 @@\n+\"use client\";\r\n import { useState, useEffect } from \"react\";\r\n import styles from \"./map.module.css\";\r\n \r\n export default function MapComponent() {\r\n"
+                },
+                {
+                    "date": 1743098811755,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n-\"use client\";\r\n+// \"use client\";\r\n import { useState, useEffect } from \"react\";\r\n import styles from \"./map.module.css\";\r\n \r\n-export default function MapComponent() {\r\n+export const MapComponent = () => {\r\n \tconst [mapUrl, setMapUrl] = useState(\"\");\r\n \r\n \tuseEffect(() => {\r\n \t\t// Latitude & Longitude (Replace with actual dynamic values)\r\n@@ -30,5 +30,5 @@\n \t\t\t\t<div className={styles.mapPlaceholder}>Loading map...</div>\r\n \t\t\t)}\r\n \t\t</div>\r\n \t);\r\n-}\r\n+};\r\n"
+                },
+                {
+                    "date": 1743098826636,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n-// \"use client\";\r\n+\"use client\";\r\n import { useState, useEffect } from \"react\";\r\n import styles from \"./map.module.css\";\r\n \r\n-export const MapComponent = () => {\r\n+export default function MapComponent() {\r\n \tconst [mapUrl, setMapUrl] = useState(\"\");\r\n \r\n \tuseEffect(() => {\r\n \t\t// Latitude & Longitude (Replace with actual dynamic values)\r\n@@ -30,5 +30,5 @@\n \t\t\t\t<div className={styles.mapPlaceholder}>Loading map...</div>\r\n \t\t\t)}\r\n \t\t</div>\r\n \t);\r\n-};\r\n+}\r\n"
+                }
+            ],
+            "date": 1743097327488,
+            "name": "Commit-0",
+            "content": "import { useState, useEffect } from \"react\";\r\nimport styles from \"./map.module.css\";\r\n\r\ninterface MapComponentProps {\r\n\taddress: string;\r\n}\r\n\r\nexport default function MapComponent({ address }: MapComponentProps) {\r\n\tconst [mapUrl, setMapUrl] = useState(\"\");\r\n\r\n\tuseEffect(() => {\r\n\t\t// Encode the address for URL\r\n\t\tconst encodedAddress = encodeURIComponent(address);\r\n\r\n\t\t// Generate OpenStreetMap URL\r\n\t\tconst url = `https://www.openstreetmap.org/export/embed.html?bbox=-74.0060,40.7128,-73.9870,40.7220&layer=mapnik&marker=${encodedAddress}`;\r\n\r\n\t\tsetMapUrl(url);\r\n\t}, [address]);\r\n\r\n\treturn (\r\n\t\t<div className={styles.mapContainer}>\r\n\t\t\t{mapUrl ? (\r\n\t\t\t\t<iframe\r\n\t\t\t\t\tsrc={mapUrl}\r\n\t\t\t\t\twidth=\"100%\"\r\n\t\t\t\t\theight=\"400\"\r\n\t\t\t\t\tframeBorder=\"0\"\r\n\t\t\t\t\tallowFullScreen\r\n\t\t\t\t\ttitle=\"Location Map\"></iframe>\r\n\t\t\t) : (\r\n\t\t\t\t<div className={styles.mapPlaceholder}>Loading map...</div>\r\n\t\t\t)}\r\n\t\t</div>\r\n\t);\r\n}\r\n"
+        }
+    ]
+}

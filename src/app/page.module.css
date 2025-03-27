@@ -1,9 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"); */
 
 /* Create a wrapper class for applying the font */
-.wrapper {
-	font-family: "Roboto", sans-serif;
-}
 .main_view {
 	background: url("/assets/view.png");
 	background-size: cover;
@@ -36,12 +33,12 @@
 }
 
 .content h1 {
-	font: 600 50px "Roboto", sans-serif;
+	font: 600 50px "Cinzel", serif;
 }
 
 .content p {
 	width: 35%;
-	font: 400 20px "Roboto", sans-serif;
+	font: 400 20px "Nunito", serif;
 	margin: 30px 0;
 }
 
@@ -52,7 +49,7 @@
 	color: white;
 	border: none;
 	border-radius: 5px;
-	font: 400 18px "Roboto", sans-serif;
+	font: 400 18px "Nunito", serif;
 	cursor: pointer;
 	transition: 0.3s ease-in-out;
 }
@@ -96,13 +93,13 @@
 
 	.content p {
 		width: 40%;
-		font: normal 15px "Roboto", sans-serif;
+		font: normal 15px "Nunito", serif;
 		margin: 20px 0;
 	}
 
 	.content button {
 		margin-top: 20px;
 		padding: 10px 25px;
-		font: 400 14px "Roboto", sans-serif;
+		font: 400 14px "Nunito", serif;
 	}
 }

@@ -1,122 +1,122 @@
 .room_header {
-  padding: 20px;
-  display: grid;
-  width: 40%;
-  gap: 30px;
+	padding: 20px;
+	display: grid;
+	width: 40%;
+	gap: 30px;
 }
 
 .container {
-  background-color: rgb(230, 230, 230);
-  color: black;
+	background-color: rgb(230, 230, 230);
+	color: black;
 }
 
 .flex {
-  display: flex;
-  gap: 8px;
-  align-items: center;
+	display: flex;
+	gap: 8px;
+	align-items: center;
 }
 
 .room_header h1 {
-  font: bold 30px "Roboto", sans-serif;
+	font: bold 30px "Cinzel", serif;
 }
 
 .room_header p {
-  font: medium 16px "Roboto", sans-serif;
+	font: normal 16px "Nunito", serif;
 }
 
 .amenities_details {
-  display: flex;
-  width: 20%;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-  padding: 10px 20px;
-  border-radius: 10px;
-  background-color: whitesmoke;
-  color: black;
+	display: flex;
+	width: 20%;
+	flex-wrap: wrap;
+	gap: 10px;
+	align-items: center;
+	padding: 10px 20px;
+	border-radius: 10px;
+	background-color: whitesmoke;
+	color: black;
 }
 
 .amenities {
-  flex-wrap: wrap;
-  display: flex;
-  gap: 20px;
+	flex-wrap: wrap;
+	display: flex;
+	gap: 20px;
 }
 
 .amenity_container {
-  display: grid;
-  gap: 20px;
-  padding: 20px;
+	display: grid;
+	gap: 20px;
+	padding: 20px;
 }
 
 @media (max-width: 575px) {
-  .room_header {
-    gap: 10px;
-    width: 100%;
-  }
+	.room_header {
+		gap: 10px;
+		width: 100%;
+	}
 
-  .room_header h1 {
-    font-size: 18px;
-  }
+	.room_header h1 {
+		font-size: 18px;
+	}
 
-  .room_header p {
-    font-size: 12px;
-    text-align: justify;
-  }
+	.room_header p {
+		font-size: 12px;
+		text-align: justify;
+	}
 
-  .amenities_details {
-    width: 45%;
-    padding: 10px 20px;
-  }
+	.amenities_details {
+		width: 45%;
+		padding: 10px 20px;
+	}
 
-  .amenities img {
-    width: 15px;
-  }
+	.amenities img {
+		width: 15px;
+	}
 
-  .amenities {
-    gap: 20px;
-    font-size: 14px;
-  }
+	.amenities {
+		gap: 20px;
+		font-size: 14px;
+	}
 
-  .amenity_container {
-    gap: 15px;
-    padding: 10px;
-  }
+	.amenity_container {
+		gap: 15px;
+		padding: 10px;
+	}
 }
 
 /* Medium Devices (Small Laptops) */
 @media (min-width: 768px) and (max-width: 991px) {
-  .room_header {
-    gap: 10px;
-    width: 60%;
-  }
+	.room_header {
+		gap: 10px;
+		width: 60%;
+	}
 
-  .room_header h1 {
-    font-size: 22px;
-  }
+	.room_header h1 {
+		font-size: 22px;
+	}
 
-  .room_header p {
-    font-size: 14px;
-    text-align: justify;
-  }
+	.room_header p {
+		font-size: 14px;
+		text-align: justify;
+	}
 
-  .amenities_details {
-    width: 25%;
-    padding: 10px 20px;
-  }
+	.amenities_details {
+		width: 25%;
+		padding: 10px 20px;
+	}
 
-  /* .amenities img {
+	/* .amenities img {
     width: 15px;
   } */
 
-  .amenities {
-    gap: 20px;
-    font-size: 14px;
-  }
+	.amenities {
+		gap: 20px;
+		font-size: 14px;
+	}
 
-  .amenity_container {
-    gap: 15px;
-    padding: 10px;
-  }
+	.amenity_container {
+		gap: 15px;
+		padding: 10px;
+	}
 }
 
 /* Large Devices (Laptops, Desktops) */

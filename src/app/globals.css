@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
 :root {
 	--background: #ffffff;
 	--foreground: #171717;
@@ -19,7 +21,7 @@ body {
 body {
 	color: var(--foreground);
 	background-color: var(--background);
-	font-family: "Roboto", Helvetica, sans-serif;
+	font-family: "Cinzel", "Nunito", serif;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 33,
+            "activePatchIndex": 35,
             "patches": [
                 {
                     "date": 1742484178497,
@@ -140,6 +140,14 @@
                 {
                     "date": 1742595957998,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,8 +46,9 @@\n \r\n .more {\r\n \tdisplay: flex;\r\n \tjustify-content: space-between;\r\n+\talign-items: center;\r\n }\r\n \r\n .more p {\r\n \tfont: bold 20px \"Roboto\", sans-serif;\r\n"
+                },
+                {
+                    "date": 1743095910930,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,16 +18,16 @@\n \tjustify-content: center;\r\n }\r\n \r\n .room {\r\n-\t/* box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px; */\r\n \tbox-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;\r\n \tborder-radius: 10px;\r\n \twidth: 22%;\r\n }\r\n \r\n .room img {\r\n \twidth: 100%;\r\n+\theight: 200px;\r\n \tobject-fit: cover;\r\n }\r\n \r\n .room_content {\r\n@@ -40,9 +40,9 @@\n \tfont: bold 24px \"Roboto\", sans-serif;\r\n }\r\n \r\n .room_content p {\r\n-\tfont: medium 16px \"Roboto\", sans-serif;\r\n+\tfont: normal 16px \"Nunito\", sans-serif;\r\n }\r\n \r\n .more {\r\n \tdisplay: flex;\r\n@@ -50,21 +50,126 @@\n \talign-items: center;\r\n }\r\n \r\n .more p {\r\n-\tfont: bold 20px \"Roboto\", sans-serif;\r\n+\tfont: bold 20px \"Nunito\", serif;\r\n }\r\n \r\n .more button {\r\n \tpadding: 8px 24px;\r\n \tbackground-color: #000000;\r\n \tcolor: white;\r\n \tborder: none;\r\n \tborder-radius: 5px;\r\n-\tfont: medium 16px \"Roboto\", sans-serif;\r\n+\tfont: medium 16px \"Nunito\", serif;\r\n \tcursor: pointer;\r\n \ttransition: 0.3s ease-in-out;\r\n }\r\n \r\n .more button:hover {\r\n \tbackground-color: #38528a;\r\n }\r\n+\r\n+@media (max-width: 575px) {\r\n+\t.featured_room {\r\n+\t\tpadding: 30px 0;\r\n+\t}\r\n+\t.featured_room h2 {\r\n+\t\tfont-size: 20px;\r\n+\t\tmargin-bottom: 30px;\r\n+\t}\r\n+\r\n+\t.room {\r\n+\t\twidth: 100%;\r\n+\t}\r\n+\r\n+\t.room img {\r\n+\t\theight: 120px;\r\n+\t}\r\n+\r\n+\t.room_content h3 {\r\n+\t\tfont-size: 14px;\r\n+\t}\r\n+\r\n+\t.room_content p {\r\n+\t\tfont-size: 10px;\r\n+\t}\r\n+\r\n+\t.more p {\r\n+\t\tfont-size: 12px;\r\n+\t}\r\n+\r\n+\t.more button {\r\n+\t\tfont-size: 10px;\r\n+\t\tpadding: 8px 12px;\r\n+\t}\r\n+}\r\n+\r\n+@media (min-width: 768px) and (max-width: 991px) {\r\n+\t.featured_room {\r\n+\t\tpadding: 40px 0;\r\n+\t}\r\n+\t.featured_room h2 {\r\n+\t\tfont-size: 30px;\r\n+\t\tmargin-bottom: 30px;\r\n+\t}\r\n+\r\n+\t.room {\r\n+\t\twidth: 45%;\r\n+\t}\r\n+\r\n+\t.room img {\r\n+\t\theight: 150px;\r\n+\t}\r\n+\r\n+\t.room_content h3 {\r\n+\t\tfont-size: 20px;\r\n+\t}\r\n+\r\n+\t.room_content p {\r\n+\t\tfont-size: 12px;\r\n+\t}\r\n+\r\n+\t.more p {\r\n+\t\tfont-size: 14px;\r\n+\t}\r\n+\r\n+\t.more button {\r\n+\t\tfont-size: 14px;\r\n+\t\tpadding: 8px 18px;\r\n+\t}\r\n+}\r\n+\r\n+@media (min-width: 992px) and (max-width: 1199px) {\r\n+\t.featured_room {\r\n+\t\tpadding: 40px 0;\r\n+\t}\r\n+\t.featured_room h2 {\r\n+\t\tfont-size: 30px;\r\n+\t\tmargin-bottom: 30px;\r\n+\t}\r\n+\r\n+\t.room {\r\n+\t\twidth: 30%;\r\n+\t}\r\n+\r\n+\t.room img {\r\n+\t\theight: 200px;\r\n+\t}\r\n+\r\n+\t.room_content h3 {\r\n+\t\tfont-size: 20px;\r\n+\t}\r\n+\r\n+\t.room_content p {\r\n+\t\tfont-size: 12px;\r\n+\t}\r\n+\r\n+\t.more p {\r\n+\t\tfont-size: 14px;\r\n+\t}\r\n+\r\n+\t.more button {\r\n+\t\tfont-size: 14px;\r\n+\t\tpadding: 8px 18px;\r\n+\t}\r\n+}\r\n"
+                },
+                {
+                    "date": 1743095986991,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -5,9 +5,9 @@\n \tpadding: 80px 0;\r\n }\r\n \r\n .featured_room h2 {\r\n-\tfont: 600 36px \"Roboto\", sans-serif;\r\n+\tfont: 600 36px \"Cinzel\", sans-serif;\r\n \tmargin-bottom: 30px;\r\n }\r\n \r\n .room_container {\r\n@@ -36,9 +36,9 @@\n \tpadding: 20px;\r\n }\r\n \r\n .room_content h3 {\r\n-\tfont: bold 24px \"Roboto\", sans-serif;\r\n+\tfont: bold 24px \"Cinzel\", sans-serif;\r\n }\r\n \r\n .room_content p {\r\n \tfont: normal 16px \"Nunito\", sans-serif;\r\n"
                 }
             ],
             "date": 1742484178497,
