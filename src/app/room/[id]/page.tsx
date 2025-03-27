@@ -4,6 +4,7 @@ import { all_rooms } from "../../model/room";
 import styles from "./room_detail.module.css";
 import { RoomCarousel } from "@/app/components/carousel";
 import Image from "next/image";
+import GuestReviews from "@/app/components/testimonials/guest-reviews";
 
 export default function RoomDetail() {
 	const params = useParams();
@@ -17,7 +18,7 @@ export default function RoomDetail() {
 		<div className={styles.container}>
 			<RoomCarousel room={room} />
 			<div className={styles.room_header}>
-				<h1>Room Detail</h1>
+				<h1>{room.name}</h1>
 				<p>{room.description}</p>
 				<div className={styles.flex}>
 					<Image src="/assets/people.svg" alt="Guests" width={20} height={20} />
@@ -53,6 +54,10 @@ export default function RoomDetail() {
 						<p>Bar</p>
 					</div>
 				</div>
+			</div>
+
+			<div>
+				<GuestReviews reviews={room.reviews} />
 			</div>
 		</div>
 	);

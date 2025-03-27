@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 26,
+            "activePatchIndex": 31,
             "patches": [
                 {
                     "date": 1742460875015,
@@ -112,6 +112,26 @@
                 {
                     "date": 1742638974218,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -36,9 +36,9 @@\n \tfont: 500 16px \"Roboto\", sans-serif;\r\n \tcolor: #111827;\r\n }\r\n \r\n-.link :hover {\r\n+.link:hover {\r\n \tcolor: #2563eb;\r\n }\r\n \r\n .active {\r\n"
+                },
+                {
+                    "date": 1743073040280,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -4,8 +4,9 @@\n }\r\n \r\n .footer_container {\r\n \tdisplay: flex;\r\n+\tflex-wrap: wrap;\r\n \talign-items: top;\r\n \tjustify-content: space-evenly;\r\n \tpadding: 20px;\r\n \tcolor: white;\r\n@@ -17,14 +18,18 @@\n \talign-items: center;\r\n \tgap: 10px;\r\n }\r\n \r\n+.row Link {\r\n+\tcolor: blue;\r\n+}\r\n+\r\n .header {\r\n \tdisplay: flex;\r\n \talign-items: center;\r\n \tjustify-content: space-between;\r\n \tpadding: 20px;\r\n-\t/* background: linear-gradient(to right, rgb(255, 251, 251), #6b7280, 0.1); */\r\n+\tbackground-color: whitesmoke;\r\n }\r\n \r\n .nav {\r\n \tdisplay: flex;\r\n@@ -61,4 +66,69 @@\n ul.list {\r\n \tlist-style-type: none;\r\n \tmargin: 20px 0;\r\n }\r\n+\r\n+@media (max-width: 575px) {\r\n+\t.header {\r\n+\t\tpadding: 10px;\r\n+\t}\r\n+\t.nav {\r\n+\t\tgap: 10px;\r\n+\t}\r\n+\t.link {\r\n+\t\tfont-size: 13px;\r\n+\t\tcolor: #111827;\r\n+\t}\r\n+\t.active {\r\n+\t\tcolor: #2563eb;\r\n+\t\tfont-size: 13px;\r\n+\t}\r\n+\r\n+\t.footer {\r\n+\t\tpadding: 10px;\r\n+\t}\r\n+\r\n+\t.content_1 {\r\n+\t\twidth: 100%;\r\n+\t\tpadding: 10px;\r\n+\t}\r\n+}\r\n+\r\n+/* Medium Devices (Small Laptops) */\r\n+@media (min-width: 768px) and (max-width: 991px) {\r\n+\t.header {\r\n+\t\tpadding: 10px;\r\n+\t}\r\n+\t.nav {\r\n+\t\tgap: 10px;\r\n+\t}\r\n+\t.link {\r\n+\t\tfont-size: 13px;\r\n+\t\tcolor: #111827;\r\n+\t}\r\n+\t.active {\r\n+\t\tcolor: #2563eb;\r\n+\t\tfont-size: 13px;\r\n+\t}\r\n+\r\n+\t.footer {\r\n+\t\tpadding: 10px;\r\n+\t}\r\n+\r\n+\t.content_1 {\r\n+\t\twidth: 50%;\r\n+\t\tpadding: 10px;\r\n+\t}\r\n+\r\n+\t.content_1 p {\r\n+\t\tfont-size: 15px;\r\n+\t}\r\n+\r\n+\t.content_1 li {\r\n+\t\tfont-size: 15px;\r\n+\t}\r\n+}\r\n+\r\n+/* Large Devices (Laptops, Desktops) */\r\n+@media (min-width: 992px) and (max-width: 1199px) {\r\n+}\r\n"
+                },
+                {
+                    "date": 1743073056092,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -18,12 +18,8 @@\n \talign-items: center;\r\n \tgap: 10px;\r\n }\r\n \r\n-.row Link {\r\n-\tcolor: blue;\r\n-}\r\n-\r\n .header {\r\n \tdisplay: flex;\r\n \talign-items: center;\r\n \tjustify-content: space-between;\r\n"
+                },
+                {
+                    "date": 1743083615727,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,8 +24,9 @@\n \talign-items: center;\r\n \tjustify-content: space-between;\r\n \tpadding: 20px;\r\n \tbackground-color: whitesmoke;\r\n+\tz-index: 4;\r\n }\r\n \r\n .nav {\r\n \tdisplay: flex;\r\n"
+                },
+                {
+                    "date": 1743083645023,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,9 @@\n \talign-items: center;\r\n \tjustify-content: space-between;\r\n \tpadding: 20px;\r\n \tbackground-color: whitesmoke;\r\n-\tz-index: 4;\r\n+\tz-index: 2;\r\n }\r\n \r\n .nav {\r\n \tdisplay: flex;\r\n"
+                },
+                {
+                    "date": 1743094151981,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -24,9 +24,8 @@\n \talign-items: center;\r\n \tjustify-content: space-between;\r\n \tpadding: 20px;\r\n \tbackground-color: whitesmoke;\r\n-\tz-index: 2;\r\n }\r\n \r\n .nav {\r\n \tdisplay: flex;\r\n"
                 }
             ],
             "date": 1742460875015,

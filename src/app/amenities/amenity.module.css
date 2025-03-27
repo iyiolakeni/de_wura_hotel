@@ -1,0 +1,66 @@
+.amenity_header {
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	background-image: url("/assets/bg_amenity.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 40vh;
+	position: relative;
+}
+
+.amenity_header::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 40vh;
+	background-color: rgba(0, 0, 0, 0.4);
+	z-index: 1;
+}
+
+.amenity_header > * {
+	position: relative;
+	z-index: 2;
+}
+
+.main {
+	display: grid;
+	justify-items: center;
+	font-family: "Roboto", sans-serif;
+	color: white;
+	z-index: 2;
+}
+
+.main h1 {
+	font: bold 48px "Roboto", sans-serif;
+}
+
+.main p {
+	font: 400 20px "Roboto", sans-serif;
+}
+
+.resource {
+	padding: 20px;
+}
+
+.resource_content {
+	display: flex;
+	flex-wrap: wrap;
+	padding: 20px;
+	justify-content: space-between;
+}
+
+.resource_part {
+	width: 50%;
+	padding: 20px;
+}
+
+.image_container img {
+	width: 100%;
+	height: 500px;
+	object-fit: cover;
+	border-radius: 10px;
+}

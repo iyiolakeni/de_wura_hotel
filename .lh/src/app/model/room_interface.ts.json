@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 6,
+            "activePatchIndex": 9,
             "patches": [
                 {
                     "date": 1742483533689,
@@ -32,6 +32,18 @@
                 {
                     "date": 1742715771851,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -52,4 +52,9 @@\n \timage10?: string;\r\n \tbed_size: string;\r\n \tno_of_guests: number;\r\n }\r\n+\r\n+export interface RoomImage {\r\n+\tsrc: string;\r\n+\talt: string;\r\n+}\r\n"
+                },
+                {
+                    "date": 1743094553588,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,8 +23,9 @@\n \textra3?: string;\r\n \textra3Image?: string;\r\n \textra4?: string;\r\n \textra4Image?: string;\r\n+\treviews: [];\r\n }\r\n \r\n export interface RoomComparison {\r\n \tid: number;\r\n"
+                },
+                {
+                    "date": 1743094580925,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,9 +23,8 @@\n \textra3?: string;\r\n \textra3Image?: string;\r\n \textra4?: string;\r\n \textra4Image?: string;\r\n-\treviews: [];\r\n }\r\n \r\n export interface RoomComparison {\r\n \tid: number;\r\n@@ -50,8 +49,9 @@\n \timage7?: string;\r\n \timage8?: string;\r\n \timage9?: string;\r\n \timage10?: string;\r\n+\treviews: [];\r\n \tbed_size: string;\r\n \tno_of_guests: number;\r\n }\r\n \r\n"
+                },
+                {
+                    "date": 1743094621270,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -49,9 +49,9 @@\n \timage7?: string;\r\n \timage8?: string;\r\n \timage9?: string;\r\n \timage10?: string;\r\n-\treviews: [];\r\n+\treviews: { name: string; rating: number; testimony: string }[];\r\n \tbed_size: string;\r\n \tno_of_guests: number;\r\n }\r\n \r\n"
                 }
             ],
             "date": 1742483533689,

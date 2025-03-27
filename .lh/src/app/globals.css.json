@@ -3,11 +3,15 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 0,
+            "activePatchIndex": 1,
             "patches": [
                 {
                     "date": 1742850489245,
                     "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1743083174953,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,44 +1,42 @@\n :root {\n-  --background: #ffffff;\n-  --foreground: #171717;\n+\t--background: #ffffff;\n+\t--foreground: #171717;\n }\n \n @media (prefers-color-scheme: dark) {\n-  :root {\n-    --background: #0a0a0a;\n-    --foreground: #ededed;\n-  }\n+\t:root {\n+\t\t--background: #0a0a0a;\n+\t\t--foreground: #ededed;\n+\t}\n }\n \n html,\n body {\n-  max-width: 100vw;\n-  overflow-x: hidden;\n+\tmax-width: 100vw;\n+\toverflow-x: hidden;\n }\n \n body {\n-  color: var(--foreground);\n-  background-color: var(--background);\n-  font-family: Arial, Helvetica, sans-serif;\n-  -webkit-font-smoothing: antialiased;\n-  -moz-osx-font-smoothing: grayscale;\n+\tcolor: var(--foreground);\n+\tbackground-color: var(--background);\n+\tfont-family: \"Roboto\", Helvetica, sans-serif;\n+\t-webkit-font-smoothing: antialiased;\n+\t-moz-osx-font-smoothing: grayscale;\n }\n \n-\n-\n * {\n-  box-sizing: border-box;\n-  padding: 0;\n-  margin: 0;\n+\tbox-sizing: border-box;\n+\tpadding: 0;\n+\tmargin: 0;\n }\n \n a {\n-  color: inherit;\n-  text-decoration: none;\n+\tcolor: inherit;\n+\ttext-decoration: none;\n }\n \n @media (prefers-color-scheme: dark) {\n-  html {\n-    color-scheme: dark;\n-  }\n+\thtml {\n+\t\tcolor-scheme: dark;\n+\t}\n }\n"
                 }
             ],
             "date": 1742850489245,

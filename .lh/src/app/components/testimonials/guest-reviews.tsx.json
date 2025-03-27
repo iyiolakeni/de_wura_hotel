@@ -1,0 +1,22 @@
+{
+    "sourceFile": "src/app/components/testimonials/guest-reviews.tsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 1,
+            "patches": [
+                {
+                    "date": 1743093745894,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1743093794948,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -27,9 +27,9 @@\n \t\t\t\tclassName={styles.starContainer}\n \t\t\t\taria-label={`${rating} out of 5 stars`}>\n \t\t\t\t{renderStars()}\n \t\t\t</div>\n-\t\t\t<p className={styles.testimony}>\"{testimony}\"</p>\n+\t\t\t<p className={styles.testimony}>{testimony}</p>\n \t\t\t<p className={styles.name}>{name}</p>\n \t\t</div>\n \t);\n };\n"
+                }
+            ],
+            "date": 1743093745894,
+            "name": "Commit-0",
+            "content": "\"use client\";\n\nimport React from \"react\";\nimport styles from \"./guest-reviews.module.css\";\n\ninterface ReviewProps {\n\tname: string;\n\trating: number;\n\ttestimony: string;\n}\n\nconst ReviewCard = ({ name, rating, testimony }: ReviewProps) => {\n\tconst renderStars = () => {\n\t\treturn Array.from({ length: 5 }).map((_, index) => (\n\t\t\t<span\n\t\t\t\tkey={`star-${index}`}\n\t\t\t\tclassName={`${styles.star} ${index < rating ? styles.filled : \"\"}`}\n\t\t\t\taria-hidden=\"true\">\n\t\t\t\t★\n\t\t\t</span>\n\t\t));\n\t};\n\n\treturn (\n\t\t<div className={styles.reviewCard}>\n\t\t\t<div\n\t\t\t\tclassName={styles.starContainer}\n\t\t\t\taria-label={`${rating} out of 5 stars`}>\n\t\t\t\t{renderStars()}\n\t\t\t</div>\n\t\t\t<p className={styles.testimony}>\"{testimony}\"</p>\n\t\t\t<p className={styles.name}>{name}</p>\n\t\t</div>\n\t);\n};\n\ninterface GuestReviewsProps {\n\treviews: ReviewProps[];\n}\n\nconst GuestReviews = ({ reviews }: GuestReviewsProps) => {\n\treturn (\n\t\t<section className={styles.reviewsContainer}>\n\t\t\t<h2 className={styles.heading}>Guest Reviews</h2>\n\t\t\t<div className={styles.reviewGrid}>\n\t\t\t\t{reviews.map((review, index) => (\n\t\t\t\t\t<ReviewCard key={review.name + index} {...review} />\n\t\t\t\t))}\n\t\t\t</div>\n\t\t</section>\n\t);\n};\n\nexport default GuestReviews;\n"
+        }
+    ]
+}

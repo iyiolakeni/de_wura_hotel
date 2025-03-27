@@ -47,15 +47,32 @@ export const Footer = () => {
 							width={20}
 							height={20}
 						/>
-						<p>9, Oyekunle Street, Ijaiye, Meiran, Lagos</p>
+						<p>9/11 Lekan Oyekunle Street Meiran Lagos</p>
 					</div>
 					<div className={styles.row}>
 						<Image src="/assets/phone.svg" alt="Phone" width={20} height={20} />
-						<p>+91 9876543210</p>
+						<div>
+							<p>
+								<Link href="tel:+2348101035359">+2348101035359,</Link>
+							</p>
+							<p>
+								<Link href="tel:08088476099">08088476099,</Link>
+							</p>
+							<p>
+								<Link href="tel:08052371740">08052371740</Link>
+							</p>
+							<p>
+								<Link href="tel:08101035359">08101035359</Link>
+							</p>
+						</div>
 					</div>
 					<div className={styles.row}>
 						<Image src="/assets/email.svg" alt="Mail" width={20} height={20} />
-						<p>info@luxuryhotel.com</p>
+						<p>
+							<Link href="mailto:dewuraalfred@gmail.com">
+								dewuraalfred@gmail.com
+							</Link>
+						</p>
 					</div>
 					<div className={styles.row}></div>
 				</div>
@@ -88,13 +105,13 @@ export const Header = () => {
 					Rooms
 				</Link>
 				<Link
-					href="#projects"
-					className={activeLink === "#projects" ? styles.active : styles.link}>
+					href="/amenities"
+					className={activeLink === "/amenities" ? styles.active : styles.link}>
 					Amenities
 				</Link>
 				<Link
-					href="#contact"
-					className={activeLink === "#contact" ? styles.active : styles.link}>
+					href="/contact"
+					className={activeLink === "/contact" ? styles.active : styles.link}>
 					Contact
 				</Link>
 			</div>

@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 3,
+            "activePatchIndex": 5,
             "patches": [
                 {
                     "date": 1742641781267,
@@ -20,6 +20,14 @@
                 {
                     "date": 1742715771841,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,7 +1,9 @@\n \"use client\";\r\n import { useParams } from \"next/navigation\";\r\n import { all_rooms } from \"../../model/room\";\r\n+import styles from \"./room_detail.module.css\";\r\n+import Image from \"next/image\";\r\n \r\n export default function RoomDetail() {\r\n \tconst params = useParams();\r\n \tconst roomId = params.id;\r\n@@ -10,9 +12,12 @@\n \r\n \tif (!room) return <div>Room Not found</div>;\r\n \r\n \treturn (\r\n-\t\t<div>\r\n+\t\t<div className={styles.container}>\r\n+\t\t\t<div className={styles.room_header}>\r\n+\t\t\t\t{/* <Image alt={room.name} src={room.image1} width={100} height={100} /> */}\r\n+\t\t\t</div>\r\n \t\t\t<h1>Room Detail</h1>\r\n \t\t\t<h2>{room.name}</h2>\r\n \t\t</div>\r\n \t);\r\n"
+                },
+                {
+                    "date": 1743072072789,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,8 +1,9 @@\n \"use client\";\r\n import { useParams } from \"next/navigation\";\r\n import { all_rooms } from \"../../model/room\";\r\n import styles from \"./room_detail.module.css\";\r\n+import { RoomCarousel } from \"@/app/components/carousel\";\r\n import Image from \"next/image\";\r\n \r\n export default function RoomDetail() {\r\n \tconst params = useParams();\r\n@@ -13,12 +14,46 @@\n \tif (!room) return <div>Room Not found</div>;\r\n \r\n \treturn (\r\n \t\t<div className={styles.container}>\r\n+\t\t\t<RoomCarousel room={room} />\r\n \t\t\t<div className={styles.room_header}>\r\n-\t\t\t\t{/* <Image alt={room.name} src={room.image1} width={100} height={100} /> */}\r\n+\t\t\t\t<h1>{room.name}</h1>\r\n+\t\t\t\t<p>{room.description}</p>\r\n+\t\t\t\t<div className={styles.flex}>\r\n+\t\t\t\t\t<Image src=\"/assets/people.svg\" alt=\"Guests\" width={20} height={20} />\r\n+\t\t\t\t\t<p>Up to {room.no_of_guests} Adults</p>\r\n+\t\t\t\t</div>\r\n+\t\t\t\t<div className={styles.flex}>\r\n+\t\t\t\t\t<Image src=\"/assets/bed.svg\" alt=\"Guests\" width={20} height={20} />\r\n+\t\t\t\t\t<p>{room.bed_size}</p>\r\n+\t\t\t\t</div>\r\n \t\t\t</div>\r\n-\t\t\t<h1>Room Detail</h1>\r\n-\t\t\t<h2>{room.name}</h2>\r\n+\r\n+\t\t\t<div className={styles.amenity_container}>\r\n+\t\t\t\t<h2>Amenities</h2>\r\n+\t\t\t\t<div className={styles.amenities}>\r\n+\t\t\t\t\t<div className={styles.amenities_details}>\r\n+\t\t\t\t\t\t<Image src=\"/assets/wifi.svg\" alt=\"Wifi\" width={20} height={20} />\r\n+\t\t\t\t\t\t<p>Free Wifi</p>\r\n+\t\t\t\t\t</div>\r\n+\t\t\t\t\t<div className={styles.amenities_details}>\r\n+\t\t\t\t\t\t<Image src=\"/assets/wifi.svg\" alt=\"Wifi\" width={20} height={20} />\r\n+\t\t\t\t\t\t<p>Free Wifi</p>\r\n+\t\t\t\t\t</div>\r\n+\t\t\t\t\t<div className={styles.amenities_details}>\r\n+\t\t\t\t\t\t<Image src=\"/assets/tv.svg\" alt=\"Wifi\" width={20} height={20} />\r\n+\t\t\t\t\t\t<p>Smart TV</p>\r\n+\t\t\t\t\t</div>\r\n+\t\t\t\t\t<div className={styles.amenities_details}>\r\n+\t\t\t\t\t\t<Image src=\"/assets/wifi.svg\" alt=\"Wifi\" width={20} height={20} />\r\n+\t\t\t\t\t\t<p>Free Wifi</p>\r\n+\t\t\t\t\t</div>\r\n+\t\t\t\t\t<div className={styles.amenities_details}>\r\n+\t\t\t\t\t\t<Image src=\"/assets/bar.svg\" alt=\"Wifi\" width={20} height={20} />\r\n+\t\t\t\t\t\t<p>Bar</p>\r\n+\t\t\t\t\t</div>\r\n+\t\t\t\t</div>\r\n+\t\t\t</div>\r\n \t\t</div>\r\n \t);\r\n }\r\n"
+                },
+                {
+                    "date": 1743094766015,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -3,8 +3,9 @@\n import { all_rooms } from \"../../model/room\";\r\n import styles from \"./room_detail.module.css\";\r\n import { RoomCarousel } from \"@/app/components/carousel\";\r\n import Image from \"next/image\";\r\n+import GuestReviews from \"@/app/components/testimonials/guest-reviews\";\r\n \r\n export default function RoomDetail() {\r\n \tconst params = useParams();\r\n \tconst roomId = params.id;\r\n@@ -53,7 +54,11 @@\n \t\t\t\t\t\t<p>Bar</p>\r\n \t\t\t\t\t</div>\r\n \t\t\t\t</div>\r\n \t\t\t</div>\r\n+\r\n+\t\t\t<div>\r\n+\t\t\t\t<GuestReviews reviews={room.reviews} />\r\n+\t\t\t</div>\r\n \t\t</div>\r\n \t);\r\n }\r\n"
                 }
             ],
             "date": 1742641781267,

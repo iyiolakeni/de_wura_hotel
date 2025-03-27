@@ -15,6 +15,26 @@ export const all_rooms: RoomPage[] = [
 		image3: "/assets/room3.svg",
 		image4: "/assets/room1.svg",
 		image5: "/assets/room1.svg",
+		reviews: [
+			{
+				name: "Ayobami Olawale",
+				rating: 5,
+				testimony:
+					"The Presidential Suite is pure luxury! From the moment I stepped in, I was blown away by the elegant decor, spacious layout, and breathtaking city views. The personalized service made me feel like royalty. A truly unforgettable experience!",
+			},
+			{
+				name: "Shola Adeyemi",
+				rating: 5,
+				testimony:
+					"Exceptional in every way! The suite was impeccably designed, with plush furnishings and state-of-the-art amenities. The private lounge and butler service added a special touch to my stay. Perfect for business or leisure!",
+			},
+			{
+				name: "Chinelo Okafor",
+				rating: 5,
+				testimony:
+					"A five-star experience! The Presidential Suite is the epitome of comfort and sophistication. The spacious bedroom, luxurious bathroom, and exclusive services exceeded my expectations. I will definitely return!",
+			},
+		],
 	},
 	{
 		id: 2,
@@ -30,6 +50,26 @@ export const all_rooms: RoomPage[] = [
 		image3: "/assets/room3.svg",
 		image4: "/assets/room1.svg",
 		image5: "/assets/room1.svg",
+		reviews: [
+			{
+				name: "Michael Adesanya",
+				rating: 5,
+				testimony:
+					"The Executive Room was everything I needed for a perfect stay. The ambiance was sophisticated, the bed was incredibly comfortable, and the workspace was well-equipped. Excellent service and a fantastic experience overall!",
+			},
+			{
+				name: "Grace Nwogu",
+				rating: 4,
+				testimony:
+					"A beautiful blend of comfort and elegance! The room was spacious, well-furnished, and had a breathtaking view. The staff was attentive, ensuring I had everything I needed for a relaxing and productive stay.",
+			},
+			{
+				name: "Tobi Alade",
+				rating: 5,
+				testimony:
+					"An exceptional stay! The Executive Room offered a peaceful retreat with modern amenities and top-tier service. The attention to detail in the room design and the overall atmosphere made my stay truly enjoyable.",
+			},
+		],
 	},
 	{
 		id: 3,
@@ -45,6 +85,26 @@ export const all_rooms: RoomPage[] = [
 		image3: "/assets/room3.svg",
 		image4: "/assets/room1.svg",
 		image5: "/assets/room1.svg",
+		reviews: [
+			{
+				name: "Samuel Johnson",
+				rating: 4,
+				testimony:
+					"The Standard Room was cozy, clean, and well-maintained. The bed was comfortable, and the amenities were just right for a relaxing stay. Great value for money with excellent service from the staff!",
+			},
+			{
+				name: "Amaka Chukwu",
+				rating: 4,
+				testimony:
+					"A wonderful stay! The room was simple yet elegant, with all the essentials I needed. The atmosphere was peaceful, and the staff was friendly and helpful throughout my visit. Would definitely stay here again!",
+			},
+			{
+				name: "David Adewale",
+				rating: 5,
+				testimony:
+					"Perfect for a short getaway! The Standard Room was spacious and well-lit, with a comfortable bed and a clean, modern bathroom. The service was top-notch, making my stay even more enjoyable!",
+			},
+		],
 	},
 	{
 		id: 4,
@@ -60,6 +120,26 @@ export const all_rooms: RoomPage[] = [
 		image3: "/assets/room3.svg",
 		image4: "/assets/room1.svg",
 		image5: "/assets/room1.svg",
+		reviews: [
+			{
+				name: "James Olatunji",
+				rating: 5,
+				testimony:
+					"The King Size Room was absolutely amazing! The bed was incredibly comfortable, and the room had a stylish, modern touch. The ambiance was peaceful, making it the perfect place to unwind after a long day. Highly recommended!",
+			},
+			{
+				name: "Efe Osagie",
+				rating: 4,
+				testimony:
+					"Spacious, clean, and well-designed! The King Size bed was plush and inviting, and the room had all the amenities I needed for a relaxing stay. The staff was courteous and always ready to assist. A great experience overall!",
+			},
+			{
+				name: "Chidinma Okorie",
+				rating: 5,
+				testimony:
+					"I had an unforgettable stay in the King Size Room! The decor was elegant, the lighting was perfect, and the bed felt like sleeping on a cloud. The service was exceptional, making my visit truly special.",
+			},
+		],
 	},
 	{
 		id: 5,
@@ -75,5 +155,25 @@ export const all_rooms: RoomPage[] = [
 		image3: "/assets/room3.svg",
 		image4: "/assets/room1.svg",
 		image5: "/assets/room1.svg",
+		reviews: [
+			{
+				name: "Peter Adeyemi",
+				rating: 5,
+				testimony:
+					"The King Single Room was perfect for my stay! The bed was incredibly comfortable, and the room had a modern yet cozy feel. Everything was spotless, and the service was excellent. I’ll definitely be back!",
+			},
+			{
+				name: "Amina Yusuf",
+				rating: 4,
+				testimony:
+					"A great stay! The room was well-furnished, quiet, and had everything I needed. The King Single bed was spacious and comfortable, and the staff was friendly and attentive. Fantastic value for the price!",
+			},
+			{
+				name: "Tunde Eze",
+				rating: 5,
+				testimony:
+					"I was impressed with the King Single Room! It had a classy design, was very clean, and the bed was just the right size for a peaceful night’s sleep. The hotel staff made sure my stay was smooth and enjoyable.",
+			},
+		],
 	},
 ];

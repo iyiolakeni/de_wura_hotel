@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 17,
+            "activePatchIndex": 27,
             "patches": [
                 {
                     "date": 1742460874980,
@@ -76,6 +76,46 @@
                 {
                     "date": 1742638767895,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -70,29 +70,32 @@\n \r\n export const Header = () => {\r\n \tconst activeLink = usePathname();\r\n \r\n-\tconst isActive = activeLink === \"/\" ? styles.active : \"\";\r\n \treturn (\r\n \t\t<div className={styles.header}>\r\n \t\t\t<div className={styles.logo}>\r\n \t\t\t\t<Image src=\"/assets/logo.jpeg\" alt=\"Logo\" width={40} height={40} />\r\n \t\t\t</div>\r\n \t\t\t<div className={styles.nav}>\r\n-\t\t\t\t<Link href=\"/\" className={isActive ? styles.active : styles.link}>\r\n+\t\t\t\t<Link\r\n+\t\t\t\t\thref=\"/\"\r\n+\t\t\t\t\tclassName={activeLink === \"/\" ? styles.active : styles.link}>\r\n \t\t\t\t\tHome\r\n \t\t\t\t</Link>\r\n-\t\t\t\t<Link href=\"/room\" className={isActive ? styles.active : styles.link}>\r\n+\t\t\t\t<Link\r\n+\t\t\t\t\thref=\"/room\"\r\n+\t\t\t\t\tclassName={activeLink === \"/room\" ? styles.active : styles.link}>\r\n \t\t\t\t\tRooms\r\n \t\t\t\t</Link>\r\n \t\t\t\t<Link\r\n \t\t\t\t\thref=\"#projects\"\r\n-\t\t\t\t\tclassName={isActive ? styles.active : styles.link}>\r\n+\t\t\t\t\tclassName={activeLink === \"#projects\" ? styles.active : styles.link}>\r\n \t\t\t\t\tAmenities\r\n \t\t\t\t</Link>\r\n \t\t\t\t<Link\r\n \t\t\t\t\thref=\"#contact\"\r\n-\t\t\t\t\tclassName={isActive ? styles.active : styles.link}>\r\n+\t\t\t\t\tclassName={activeLink === \"#contact\" ? styles.active : styles.link}>\r\n \t\t\t\t\tContact\r\n \t\t\t\t</Link>\r\n \t\t\t</div>\r\n \t\t</div>\r\n"
+                },
+                {
+                    "date": 1743070042630,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -46,9 +46,9 @@\n \t\t\t\t\t\t\talt=\"Phone\"\r\n \t\t\t\t\t\t\twidth={20}\r\n \t\t\t\t\t\t\theight={20}\r\n \t\t\t\t\t\t/>\r\n-\t\t\t\t\t\t<p>9, Oyekunle Street, Ijaiye, Meiran, Lagos</p>\r\n+\t\t\t\t\t\t<p>9/11 Lekan Oyekunle Street Meiran Lagos</p>\r\n \t\t\t\t\t</div>\r\n \t\t\t\t\t<div className={styles.row}>\r\n \t\t\t\t\t\t<Image src=\"/assets/phone.svg\" alt=\"Phone\" width={20} height={20} />\r\n \t\t\t\t\t\t<p>+91 9876543210</p>\r\n"
+                },
+                {
+                    "date": 1743072759654,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,13 +50,15 @@\n \t\t\t\t\t\t<p>9/11 Lekan Oyekunle Street Meiran Lagos</p>\r\n \t\t\t\t\t</div>\r\n \t\t\t\t\t<div className={styles.row}>\r\n \t\t\t\t\t\t<Image src=\"/assets/phone.svg\" alt=\"Phone\" width={20} height={20} />\r\n-\t\t\t\t\t\t<p>+91 9876543210</p>\r\n+\t\t\t\t\t\t<p>+2348101035359</p>\r\n \t\t\t\t\t</div>\r\n \t\t\t\t\t<div className={styles.row}>\r\n \t\t\t\t\t\t<Image src=\"/assets/email.svg\" alt=\"Mail\" width={20} height={20} />\r\n-\t\t\t\t\t\t<p>info@luxuryhotel.com</p>\r\n+\t\t\t\t\t\t<p>\r\n+\t\t\t\t\t\t\t<a href=\"mailto:dewuraalfred@gmail.com\">dewuraalfred@gmail.com</a>\r\n+\t\t\t\t\t\t</p>\r\n \t\t\t\t\t</div>\r\n \t\t\t\t\t<div className={styles.row}></div>\r\n \t\t\t\t</div>\r\n \t\t\t\t<div className={styles.content_1}>\r\n"
+                },
+                {
+                    "date": 1743072930823,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -50,9 +50,13 @@\n \t\t\t\t\t\t<p>9/11 Lekan Oyekunle Street Meiran Lagos</p>\r\n \t\t\t\t\t</div>\r\n \t\t\t\t\t<div className={styles.row}>\r\n \t\t\t\t\t\t<Image src=\"/assets/phone.svg\" alt=\"Phone\" width={20} height={20} />\r\n-\t\t\t\t\t\t<p>+2348101035359</p>\r\n+\t\t\t\t\t\t<div>\r\n+\t\t\t\t\t\t\t<p>+2348101035359,</p>\r\n+\t\t\t\t\t\t\t<p>08088476099,</p>\r\n+\t\t\t\t\t\t\t<p>08052371740</p>\r\n+\t\t\t\t\t\t</div>\r\n \t\t\t\t\t</div>\r\n \t\t\t\t\t<div className={styles.row}>\r\n \t\t\t\t\t\t<Image src=\"/assets/email.svg\" alt=\"Mail\" width={20} height={20} />\r\n \t\t\t\t\t\t<p>\r\n"
+                },
+                {
+                    "date": 1743072951609,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,11 +58,9 @@\n \t\t\t\t\t\t</div>\r\n \t\t\t\t\t</div>\r\n \t\t\t\t\t<div className={styles.row}>\r\n \t\t\t\t\t\t<Image src=\"/assets/email.svg\" alt=\"Mail\" width={20} height={20} />\r\n-\t\t\t\t\t\t<p>\r\n-\t\t\t\t\t\t\t<a href=\"mailto:dewuraalfred@gmail.com\">dewuraalfred@gmail.com</a>\r\n-\t\t\t\t\t\t</p>\r\n+\t\t\t\t\t\t<a href=\"mailto:dewuraalfred@gmail.com\">dewuraalfred@gmail.com</a>\r\n \t\t\t\t\t</div>\r\n \t\t\t\t\t<div className={styles.row}></div>\r\n \t\t\t\t</div>\r\n \t\t\t\t<div className={styles.content_1}>\r\n"
+                },
+                {
+                    "date": 1743072991450,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -58,9 +58,13 @@\n \t\t\t\t\t\t</div>\r\n \t\t\t\t\t</div>\r\n \t\t\t\t\t<div className={styles.row}>\r\n \t\t\t\t\t\t<Image src=\"/assets/email.svg\" alt=\"Mail\" width={20} height={20} />\r\n-\t\t\t\t\t\t<a href=\"mailto:dewuraalfred@gmail.com\">dewuraalfred@gmail.com</a>\r\n+\t\t\t\t\t\t<p>\r\n+\t\t\t\t\t\t\t<Link href=\"mailto:dewuraalfred@gmail.com\">\r\n+\t\t\t\t\t\t\t\tdewuraalfred@gmail.com\r\n+\t\t\t\t\t\t\t</Link>\r\n+\t\t\t\t\t\t</p>\r\n \t\t\t\t\t</div>\r\n \t\t\t\t\t<div className={styles.row}></div>\r\n \t\t\t\t</div>\r\n \t\t\t\t<div className={styles.content_1}>\r\n"
+                },
+                {
+                    "date": 1743073145357,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -51,11 +51,17 @@\n \t\t\t\t\t</div>\r\n \t\t\t\t\t<div className={styles.row}>\r\n \t\t\t\t\t\t<Image src=\"/assets/phone.svg\" alt=\"Phone\" width={20} height={20} />\r\n \t\t\t\t\t\t<div>\r\n-\t\t\t\t\t\t\t<p>+2348101035359,</p>\r\n-\t\t\t\t\t\t\t<p>08088476099,</p>\r\n-\t\t\t\t\t\t\t<p>08052371740</p>\r\n+\t\t\t\t\t\t\t<p>\r\n+\t\t\t\t\t\t\t\t<Link href=\"tel:+2348101035359\">+2348101035359,</Link>\r\n+\t\t\t\t\t\t\t</p>\r\n+\t\t\t\t\t\t\t<p>\r\n+\t\t\t\t\t\t\t\t<Link href=\"tel:08088476099\">08088476099,</Link>\r\n+\t\t\t\t\t\t\t</p>\r\n+\t\t\t\t\t\t\t<p>\r\n+\t\t\t\t\t\t\t\t<Link href=\"tel:08052371740\">08052371740</Link>\r\n+\t\t\t\t\t\t\t</p>\r\n \t\t\t\t\t\t</div>\r\n \t\t\t\t\t</div>\r\n \t\t\t\t\t<div className={styles.row}>\r\n \t\t\t\t\t\t<Image src=\"/assets/email.svg\" alt=\"Mail\" width={20} height={20} />\r\n"
+                },
+                {
+                    "date": 1743073183971,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -60,8 +60,11 @@\n \t\t\t\t\t\t\t</p>\r\n \t\t\t\t\t\t\t<p>\r\n \t\t\t\t\t\t\t\t<Link href=\"tel:08052371740\">08052371740</Link>\r\n \t\t\t\t\t\t\t</p>\r\n+\t\t\t\t\t\t\t<p>\r\n+\t\t\t\t\t\t\t\t<Link href=\"tel:08101035359\">08101035359</Link>\r\n+\t\t\t\t\t\t\t</p>\r\n \t\t\t\t\t\t</div>\r\n \t\t\t\t\t</div>\r\n \t\t\t\t\t<div className={styles.row}>\r\n \t\t\t\t\t\t<Image src=\"/assets/email.svg\" alt=\"Mail\" width={20} height={20} />\r\n"
+                },
+                {
+                    "date": 1743076129987,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -105,9 +105,9 @@\n \t\t\t\t\tRooms\r\n \t\t\t\t</Link>\r\n \t\t\t\t<Link\r\n \t\t\t\t\thref=\"#projects\"\r\n-\t\t\t\t\tclassName={activeLink === \"#projects\" ? styles.active : styles.link}>\r\n+\t\t\t\t\tclassName={activeLink === \"/amenities\" ? styles.active : styles.link}>\r\n \t\t\t\t\tAmenities\r\n \t\t\t\t</Link>\r\n \t\t\t\t<Link\r\n \t\t\t\t\thref=\"#contact\"\r\n"
+                },
+                {
+                    "date": 1743080499548,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -110,9 +110,9 @@\n \t\t\t\t\tAmenities\r\n \t\t\t\t</Link>\r\n \t\t\t\t<Link\r\n \t\t\t\t\thref=\"#contact\"\r\n-\t\t\t\t\tclassName={activeLink === \"#contact\" ? styles.active : styles.link}>\r\n+\t\t\t\t\tclassName={activeLink === \"/contact\" ? styles.active : styles.link}>\r\n \t\t\t\t\tContact\r\n \t\t\t\t</Link>\r\n \t\t\t</div>\r\n \t\t</div>\r\n"
+                },
+                {
+                    "date": 1743081874421,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -104,14 +104,14 @@\n \t\t\t\t\tclassName={activeLink === \"/room\" ? styles.active : styles.link}>\r\n \t\t\t\t\tRooms\r\n \t\t\t\t</Link>\r\n \t\t\t\t<Link\r\n-\t\t\t\t\thref=\"#projects\"\r\n+\t\t\t\t\thref=\"/amenities\"\r\n \t\t\t\t\tclassName={activeLink === \"/amenities\" ? styles.active : styles.link}>\r\n \t\t\t\t\tAmenities\r\n \t\t\t\t</Link>\r\n \t\t\t\t<Link\r\n-\t\t\t\t\thref=\"#contact\"\r\n+\t\t\t\t\thref=\"/contact\"\r\n \t\t\t\t\tclassName={activeLink === \"/contact\" ? styles.active : styles.link}>\r\n \t\t\t\t\tContact\r\n \t\t\t\t</Link>\r\n \t\t\t</div>\r\n"
                 }
             ],
             "date": 1742460874980,
