@@ -5,6 +5,7 @@ import styles from "./contact.module.css";
 import MapComponent from "../components/map/map";
 import Image from "next/image";
 import Link from "next/link";
+import Alert from "../components/alerts/alert";
 
 export default function ContactPage() {
 	const [formData, setFormData] = useState({
@@ -23,15 +24,49 @@ export default function ContactPage() {
 		}));
 	};
 
-	const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+	const [loading, setLoading] = useState(false);
+
+	const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
 		e.preventDefault();
-		const contactEmail = "dewuraalfred@gmail.com";
-		const mailtoLink = `mailto:${contactEmail}?subject=${encodeURIComponent(
-			formData.subject
-		)}&body=${encodeURIComponent(
-			`Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\n\nMessage:\n${formData.message}`
-		)}`;
-		window.location.href = mailtoLink;
+		setLoading(true);
+
+		try {
+			const response = await fetch("https://formspree.io/f/xanednwv", {
+				method: "POST",
+				headers: { "Content-Type": "application/json" },
+				body: JSON.stringify(formData),
+			});
+
+			if (response.ok) {
+				<Alert
+					message="Message sent successfully!"
+					type="success"
+					onClose={() => {}}
+				/>;
+				setFormData({
+					name: "",
+					email: "",
+					phone: "",
+					subject: "",
+					message: "",
+				});
+			} else {
+				<Alert
+					message="Something went wrong.!"
+					type="error"
+					onClose={() => {}}
+				/>;
+			}
+		} catch (error) {
+			alert(`Failed to send message. ${error}`);
+			<Alert
+				message={`Failed to send message. ${error}`}
+				type="error"
+				onClose={() => {}}
+			/>;
+		} finally {
+			setLoading(false);
+		}
 	};
 
 	const hotelAddress =
@@ -108,8 +143,11 @@ export default function ContactPage() {
 								required></textarea>
 						</div>
 
-						<button type="submit" className={styles.sendMessage}>
-							Send Message
+						<button
+							type="submit"
+							className={styles.sendMessage}
+							disabled={loading}>
+							{loading ? "Sending..." : "Send Message"}
 						</button>
 					</form>
 				</div>
