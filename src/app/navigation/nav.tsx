@@ -29,10 +29,10 @@ export const Footer = () => {
 							<Link href="/room">Rooms</Link>
 						</li>
 						<li>
-							<Link href="/about">Amenities</Link>
+							<Link href="/amenities">Amenities</Link>
 						</li>
 						<li>
-							<Link href="/about">Club House</Link>
+							<Link href="/">Club House</Link>
 						</li>
 					</ul>
 				</div>
