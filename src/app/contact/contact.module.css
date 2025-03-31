@@ -86,11 +86,35 @@
 	margin-right: 10px;
 }
 
+.icon {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: #ddd;
+}
+
+.icon img {
+	width: 25px;
+}
 .socialLinks {
 	display: flex;
+	align-items: center;
 	justify-content: center;
 	gap: 15px;
 	margin-top: 20px;
+}
+
+.socialIcon {
+	width: 30px;
+	height: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: #ddd;
 }
 
 .footer {

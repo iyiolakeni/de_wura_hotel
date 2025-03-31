@@ -177,7 +177,7 @@ export default function ContactPage() {
 									/>
 								</span>
 								<p>
-									<Link href="tel:+2348101035359">+2348101035359, </Link>
+									{/* <Link href="tel:+2348101035359">+2348101035359, </Link> */}
 									<Link href="tel:08088476099">08088476099, </Link>
 									<Link href="tel:08101035359">08101035359</Link>
 								</p>
@@ -192,8 +192,8 @@ export default function ContactPage() {
 									/>
 								</span>
 								<p>
-									<Link href="mailto:dewuraalfred@gmail.com">
-										dewuraalfred@gmail.com
+									<Link href="mailto:goldfred6303@gmail.com">
+										goldfred6303@gmail.com
 									</Link>
 								</p>
 							</div>
@@ -211,38 +211,66 @@ export default function ContactPage() {
 			<div className={styles.footer}>
 				<h2>Follow Us</h2>
 				<div className={styles.socialLinks}>
-					<a href="#" className={styles.socialIcon}>
+					<Link
+						href="https://facebook.com/dewuraalfred"
+						target="_blank"
+						rel="noopener noreferrer"
+						className={styles.socialIcon}>
 						<Image
 							src={"/assets/facebook.svg"}
 							width={20}
 							height={20}
 							alt="Facebook"
 						/>
-					</a>
-					<a href="#" className={styles.socialIcon}>
+					</Link>
+					<Link
+						href="https://www.instagram.com/dewuraalfred"
+						target="_blank"
+						rel="noopener noreferrer"
+						className={styles.socialIcon}>
 						<Image
 							src={"/assets/instagram.svg"}
 							width={20}
 							height={20}
 							alt="Instagram"
 						/>
-					</a>
-					<a href="#" className={styles.socialIcon}>
+					</Link>
+					<Link
+						target="_blank"
+						href="https://x.com/dewuraalfred"
+						rel="noopener noreferrer"
+						className={styles.socialIcon}>
 						<Image
 							src={"/assets/twitter.svg"}
 							width={20}
 							height={20}
 							alt="Twitter"
 						/>
-					</a>
-					<a href="#" className={styles.socialIcon}>
+					</Link>
+					<Link
+						href="https://www.tiktok.com/@dewuraalfred"
+						target="_blank"
+						rel="noopener noreferrer"
+						className={styles.socialIcon}>
 						<Image
 							src={"/assets/tiktok.svg"}
 							width={20}
 							height={20}
 							alt="Tiktok"
 						/>
-					</a>
+					</Link>
+					<Link
+						href="https://wa.me/2348101035359"
+						target="_blank"
+						rel="noopener noreferrer"
+						className={styles.socialIcon}>
+						<Image
+							src={"/assets/whatsapp.svg"}
+							width={20}
+							height={20}
+							alt="WhatsApp"
+						/>
+					</Link>
 				</div>
 			</div>
 		</div>

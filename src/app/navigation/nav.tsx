@@ -16,9 +16,9 @@ export const Footer = () => {
 		<div className={styles.footer}>
 			<div className={styles.footer_container}>
 				<div className={styles.content_1}>
-					<Image src="/assets/logo.jpeg" alt="Logo" width={40} height={40} />
+					<Image src="/assets/logo.jpeg" alt="Logo" width={200} height={200} />
 					<p>
-						Experience luxury beyond compare at our exotic place, where every
+						Experience luxury beyond comparison at our exotic place, where every
 						moment is crafted to perfection
 					</p>
 				</div>
@@ -40,7 +40,7 @@ export const Footer = () => {
 					<h3>Contact Us</h3>
 					<p>9/11 Lekan Oyekunle Street Meiran Lagos</p>
 					<p>
-						<Link href="tel:08103113910">08103113910, </Link>
+						{/* <Link href="tel:08103113910">08103113910, </Link> */}
 						<Link href="tel:+2348101035359">+2348101035359, </Link>
 						<Link href="tel:08088476099">08088476099,</Link>
 					</p>
@@ -49,8 +49,8 @@ export const Footer = () => {
 						<Link href="tel:08101035359">08101035359</Link>
 					</p>
 					<p>
-						<Link href="mailto:dewuraalfred@gmail.com">
-							dewuraalfred@gmail.com
+						<Link href="mailto:goldfred6303@gmail.com">
+							goldfred6303@gmail.com
 						</Link>
 					</p>
 				</div>

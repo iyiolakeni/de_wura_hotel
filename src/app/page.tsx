@@ -62,7 +62,7 @@ export default function Home() {
 			<div className={styles.main_view}>
 				<div className={styles.content}>
 					<h1>Experience Luxury</h1>
-					<h1>Beyond Compare</h1>
+					<h1>Beyond Comparison</h1>
 					<p>
 						Discover an oasis of tranquility and elegance at our five-star
 						resort, where every moment is crafted to perfection.
