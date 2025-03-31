@@ -26,9 +26,6 @@ export const Footer = () => {
 					<h3>Quick Links</h3>
 					<ul className={styles.list}>
 						<li>
-							<Link href="/about">About Us</Link>
-						</li>
-						<li>
 							<Link href="/room">Rooms</Link>
 						</li>
 						<li>
