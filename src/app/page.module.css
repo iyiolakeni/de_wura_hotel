@@ -2,14 +2,51 @@
 
 /* Create a wrapper class for applying the font */
 .main_view {
-	background: url("/assets/view.png");
-	background-size: cover;
-	background-repeat: no-repeat;
 	position: relative;
-	background-position: center;
 	height: 70vh;
 	display: grid;
 	align-items: center;
+	animation: slideshow 50s infinite;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: background-image 1s ease-in-out;
+}
+
+@keyframes slideshow {
+	0% {
+		background-image: url("/assets/reception.jpg");
+	}
+	10% {
+		background-image: url("/assets/reception1.jpg");
+	}
+	20% {
+		background-image: url("/assets/bar/1.jpg");
+	}
+	30% {
+		background-image: url("/assets/bar/6.jpg");
+	}
+	40% {
+		background-image: url("/assets/outlook/3.jpg");
+	}
+	50% {
+		background-image: url("/assets/outlook/1.jpg");
+	}
+	60% {
+		background-image: url("/assets/restuarant/1.jpg");
+	}
+	70% {
+		background-image: url("/assets/snoker.jpg");
+	}
+	80% {
+		background-image: url("/assets/club.jpg");
+	}
+	90% {
+		background-image: url("/assets/walkway1.jpg");
+	}
+	100% {
+		background-image: url("/assets/walkway2.jpg");
+	}
 }
 .main_view::before {
 	content: "";

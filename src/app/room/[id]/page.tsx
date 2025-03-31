@@ -38,16 +38,16 @@ export default function RoomDetail() {
 						<p>Free Wifi</p>
 					</div>
 					<div className={styles.amenities_details}>
-						<Image src="/assets/wifi.svg" alt="Wifi" width={20} height={20} />
-						<p>Free Wifi</p>
+						<Image src="/assets/refrig.svg" alt="Wifi" width={20} height={20} />
+						<p>Refrigerator</p>
 					</div>
 					<div className={styles.amenities_details}>
 						<Image src="/assets/tv.svg" alt="Wifi" width={20} height={20} />
 						<p>Smart TV</p>
 					</div>
 					<div className={styles.amenities_details}>
-						<Image src="/assets/wifi.svg" alt="Wifi" width={20} height={20} />
-						<p>Free Wifi</p>
+						<Image src="/assets/hanger.svg" alt="Wifi" width={20} height={20} />
+						<p>Wardrope</p>
 					</div>
 					<div className={styles.amenities_details}>
 						<Image src="/assets/bar.svg" alt="Wifi" width={20} height={20} />

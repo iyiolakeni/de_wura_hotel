@@ -41,18 +41,14 @@ export const Footer = () => {
 				</div>
 				<div className={styles.content_1}>
 					<h3>Contact Us</h3>
-
 					<p>9/11 Lekan Oyekunle Street Meiran Lagos</p>
 					<p>
-						<Link href="tel:+2348101035359">+2348101035359,</Link>
-					</p>
-					<p>
+						<Link href="tel:08103113910">08103113910, </Link>
+						<Link href="tel:+2348101035359">+2348101035359, </Link>
 						<Link href="tel:08088476099">08088476099,</Link>
 					</p>
 					<p>
-						<Link href="tel:08052371740">08052371740</Link>
-					</p>
-					<p>
+						<Link href="tel:08052371740">08052371740, </Link>
 						<Link href="tel:08101035359">08101035359</Link>
 					</p>
 					<p>

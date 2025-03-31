@@ -6,7 +6,7 @@
 .footer_container {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: top;
+	align-items: flex-start;
 	justify-content: space-evenly;
 	padding: 20px;
 	color: white;

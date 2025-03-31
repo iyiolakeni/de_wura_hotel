@@ -50,6 +50,9 @@ export interface RoomPage {
 	image8?: string;
 	image9?: string;
 	image10?: string;
+	image11?: string;
+	image12?: string;
+	image13?: string;
 	reviews: { name: string; rating: number; testimony: string }[];
 	bed_size: string;
 	no_of_guests: number;

@@ -138,7 +138,7 @@ export const RoomCarousel: React.FC<RoomCarouselProps> = ({ room }) => {
 			)}
 
 			{/* Indicators - dots at the bottom */}
-			{images.length > 1 && (
+			{/* {images.length > 1 && (
 				<div className={styles.indicators}>
 					{images.map((_, index) => (
 						<button
@@ -151,7 +151,7 @@ export const RoomCarousel: React.FC<RoomCarouselProps> = ({ room }) => {
 						/>
 					))}
 				</div>
-			)}
+			)} */}
 		</div>
 	);
 };

@@ -22,7 +22,7 @@ export default function MapComponent() {
 				<iframe
 					src={mapUrl}
 					width="100%"
-					height="400"
+					height="300"
 					frameBorder="0"
 					allowFullScreen
 					title="Google Maps Location"></iframe>
