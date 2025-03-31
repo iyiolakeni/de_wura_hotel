@@ -3,8 +3,8 @@ import { RoomPage } from "./room_interface";
 export const all_rooms: RoomPage[] = [
 	{
 		id: 1,
-		name: "Presidential Suit",
-		route: "presidential-suit",
+		name: "Presidential Suite",
+		route: "presidential-suite",
 		description:
 			"The Presidential Suite is the most luxurious room in the hotel. It is a two-bedroom suite with a separate living room, dining room, kitchen, and a private balcony. The suite is perfect for families or guests who want to experience the ultimate luxury.",
 		price: 40000,
@@ -114,74 +114,74 @@ export const all_rooms: RoomPage[] = [
 			},
 		],
 	},
-	{
-		id: 4,
-		name: "Kings Size Room 1",
-		route: "kings-size-room-1",
-		description:
-			"The Kings Size Room 1 is a spacious room with a king-size bed, a separate living area, and a private balcony. The room is perfect for business travelers or guests who want a little extra space to relax and unwind.",
-		price: 25000,
-		bed_size: "King Size",
-		no_of_guests: 4,
-		image1: "/assets/kings/1.jpg",
-		image2: "/assets/kings/2.jpg",
-		image3: "/assets/kings/3.jpg",
-		image4: "/assets/kings/4.jpg",
-		image5: "/assets/kings/5.jpg",
-		reviews: [
-			{
-				name: "James Olatunji",
-				rating: 5,
-				testimony:
-					"The King Size Room was absolutely amazing! The bed was incredibly comfortable, and the room had a stylish, modern touch. The ambiance was peaceful, making it the perfect place to unwind after a long day. Highly recommended!",
-			},
-			{
-				name: "Efe Osagie",
-				rating: 4,
-				testimony:
-					"Spacious, clean, and well-designed! The King Size bed was plush and inviting, and the room had all the amenities I needed for a relaxing stay. The staff was courteous and always ready to assist. A great experience overall!",
-			},
-			{
-				name: "Chidinma Okorie",
-				rating: 5,
-				testimony:
-					"I had an unforgettable stay in the King Size Room! The decor was elegant, the lighting was perfect, and the bed felt like sleeping on a cloud. The service was exceptional, making my visit truly special.",
-			},
-		],
-	},
-	{
-		id: 5,
-		name: "Kings Single Room 2",
-		route: "kings-single-room-2",
-		description:
-			"The Kings Single Room 2 is a comfortable room with a king-size bed and a private balcony. The room is perfect for couples or solo travelers looking for a cozy and relaxing stay.",
-		price: 20000,
-		bed_size: "King Size",
-		no_of_guests: 4,
-		image1: "/assets/kings/3.jpg",
-		image2: "/assets/kings/1.jpg",
-		image3: "/assets/kings/2.jpg",
-		image4: "/assets/kings/4.jpg",
-		image5: "/assets/kings/5.jpg",
-		reviews: [
-			{
-				name: "Peter Adeyemi",
-				rating: 5,
-				testimony:
-					"The King Single Room was perfect for my stay! The bed was incredibly comfortable, and the room had a modern yet cozy feel. Everything was spotless, and the service was excellent. I’ll definitely be back!",
-			},
-			{
-				name: "Amina Yusuf",
-				rating: 4,
-				testimony:
-					"A great stay! The room was well-furnished, quiet, and had everything I needed. The King Single bed was spacious and comfortable, and the staff was friendly and attentive. Fantastic value for the price!",
-			},
-			{
-				name: "Tunde Eze",
-				rating: 5,
-				testimony:
-					"I was impressed with the King Single Room! It had a classy design, was very clean, and the bed was just the right size for a peaceful night’s sleep. The hotel staff made sure my stay was smooth and enjoyable.",
-			},
-		],
-	},
+	// {
+	// 	id: 4,
+	// 	name: "Kings Size Room 1",
+	// 	route: "kings-size-room-1",
+	// 	description:
+	// 		"The Kings Size Room 1 is a spacious room with a king-size bed, a separate living area, and a private balcony. The room is perfect for business travelers or guests who want a little extra space to relax and unwind.",
+	// 	price: 25000,
+	// 	bed_size: "King Size",
+	// 	no_of_guests: 4,
+	// 	image1: "/assets/kings/1.jpg",
+	// 	image2: "/assets/kings/2.jpg",
+	// 	image3: "/assets/kings/3.jpg",
+	// 	image4: "/assets/kings/4.jpg",
+	// 	image5: "/assets/kings/5.jpg",
+	// 	reviews: [
+	// 		{
+	// 			name: "James Olatunji",
+	// 			rating: 5,
+	// 			testimony:
+	// 				"The King Size Room was absolutely amazing! The bed was incredibly comfortable, and the room had a stylish, modern touch. The ambiance was peaceful, making it the perfect place to unwind after a long day. Highly recommended!",
+	// 		},
+	// 		{
+	// 			name: "Efe Osagie",
+	// 			rating: 4,
+	// 			testimony:
+	// 				"Spacious, clean, and well-designed! The King Size bed was plush and inviting, and the room had all the amenities I needed for a relaxing stay. The staff was courteous and always ready to assist. A great experience overall!",
+	// 		},
+	// 		{
+	// 			name: "Chidinma Okorie",
+	// 			rating: 5,
+	// 			testimony:
+	// 				"I had an unforgettable stay in the King Size Room! The decor was elegant, the lighting was perfect, and the bed felt like sleeping on a cloud. The service was exceptional, making my visit truly special.",
+	// 		},
+	// 	],
+	// },
+	// {
+	// 	id: 5,
+	// 	name: "Kings Single Room 2",
+	// 	route: "kings-single-room-2",
+	// 	description:
+	// 		"The Kings Single Room 2 is a comfortable room with a king-size bed and a private balcony. The room is perfect for couples or solo travelers looking for a cozy and relaxing stay.",
+	// 	price: 20000,
+	// 	bed_size: "King Size",
+	// 	no_of_guests: 4,
+	// 	image1: "/assets/kings/3.jpg",
+	// 	image2: "/assets/kings/1.jpg",
+	// 	image3: "/assets/kings/2.jpg",
+	// 	image4: "/assets/kings/4.jpg",
+	// 	image5: "/assets/kings/5.jpg",
+	// 	reviews: [
+	// 		{
+	// 			name: "Peter Adeyemi",
+	// 			rating: 5,
+	// 			testimony:
+	// 				"The King Single Room was perfect for my stay! The bed was incredibly comfortable, and the room had a modern yet cozy feel. Everything was spotless, and the service was excellent. I’ll definitely be back!",
+	// 		},
+	// 		{
+	// 			name: "Amina Yusuf",
+	// 			rating: 4,
+	// 			testimony:
+	// 				"A great stay! The room was well-furnished, quiet, and had everything I needed. The King Single bed was spacious and comfortable, and the staff was friendly and attentive. Fantastic value for the price!",
+	// 		},
+	// 		{
+	// 			name: "Tunde Eze",
+	// 			rating: 5,
+	// 			testimony:
+	// 				"I was impressed with the King Single Room! It had a classy design, was very clean, and the bed was just the right size for a peaceful night’s sleep. The hotel staff made sure my stay was smooth and enjoyable.",
+	// 		},
+	// 	],
+	// },
 ];
