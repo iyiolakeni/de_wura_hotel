@@ -6,7 +6,7 @@ export const all_rooms: RoomPage[] = [
 		name: "Presidential Suite",
 		route: "presidential-suite",
 		description:
-			"The Presidential Suite is the most luxurious room in the hotel. It is a two-bedroom suite with a separate living room, dining room, kitchen, and a private balcony. The suite is perfect for families or guests who want to experience the ultimate luxury.",
+			"The Presidential Suite is the most luxurious accommodation in the hotel. Elegantly designed with premium furnishings and finishes, this spacious suite offers an exceptional level of comfort and sophistication. The suite is perfect for guests who want to experience the ultimate luxury during their stay.",
 		price: 40000,
 		bed_size: "King Size",
 		no_of_guests: 4,
@@ -34,7 +34,7 @@ export const all_rooms: RoomPage[] = [
 				name: "Shola Adeyemi",
 				rating: 5,
 				testimony:
-					"Exceptional in every way! The suite was impeccably designed, with plush furnishings and state-of-the-art amenities. The private lounge and butler service added a special touch to my stay. Perfect for business or leisure!",
+					"Exceptional in every way! The suite was impeccably designed, with plush furnishings and state-of-the-art amenities. The private service added a special touch to my stay. Perfect for business or leisure!",
 			},
 			{
 				name: "Chinelo Okafor",
@@ -44,12 +44,13 @@ export const all_rooms: RoomPage[] = [
 			},
 		],
 	},
+	// Rest of the rooms remain unchanged
 	{
 		id: 2,
 		name: "Executive Room",
 		route: "executive-room",
 		description:
-			"The Executive Room is a spacious room with a king-size bed, a separate living area, and a private balcony. The room is perfect for business travelers or guests who want a little extra space to relax and unwind.",
+			"The Executive Room is a spacious room with a king-size bed, a separate living area. The room is perfect for business travelers or guests who want a little extra space to relax and unwind.",
 		price: 30000,
 		bed_size: "King Size",
 		no_of_guests: 4,
@@ -84,7 +85,7 @@ export const all_rooms: RoomPage[] = [
 		name: "Standard Room",
 		route: "standard-room",
 		description:
-			"The Standard Room is a comfortable room with a king-size bed and a private balcony. The room is perfect for couples or solo travelers looking for a cozy and relaxing stay.",
+			"The Standard Room is a comfortable room with a king-size bed and amenities. The room is perfect for couples or solo travelers looking for a cozy and relaxing stay.",
 		price: 25000,
 		bed_size: "King Size",
 		no_of_guests: 4,
@@ -168,7 +169,7 @@ export const all_rooms: RoomPage[] = [
 	// 			name: "Peter Adeyemi",
 	// 			rating: 5,
 	// 			testimony:
-	// 				"The King Single Room was perfect for my stay! The bed was incredibly comfortable, and the room had a modern yet cozy feel. Everything was spotless, and the service was excellent. I’ll definitely be back!",
+	// 				"The King Single Room was perfect for my stay! The bed was incredibly comfortable, and the room had a modern yet cozy feel. Everything was spotless, and the service was excellent. I'll definitely be back!",
 	// 		},
 	// 		{
 	// 			name: "Amina Yusuf",
@@ -180,7 +181,7 @@ export const all_rooms: RoomPage[] = [
 	// 			name: "Tunde Eze",
 	// 			rating: 5,
 	// 			testimony:
-	// 				"I was impressed with the King Single Room! It had a classy design, was very clean, and the bed was just the right size for a peaceful night’s sleep. The hotel staff made sure my stay was smooth and enjoyable.",
+	// 				"I was impressed with the King Single Room! It had a classy design, was very clean, and the bed was just the right size for a peaceful night's sleep. The hotel staff made sure my stay was smooth and enjoyable.",
 	// 		},
 	// 	],
 	// },
